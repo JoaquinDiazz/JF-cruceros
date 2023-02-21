@@ -5,101 +5,218 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cruceros JF | Destinos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
     <div class="mainImg-destinos">
-        <header class="destinos-main ">
-            <nav class="nav-bar">
-                <a class="logo" href="../index.html">Cruceros <span class="JF">JF</span> </a>
-                <ul class="menu-items">
-                    <li><a href="../index.html">HOME</a></li>
-                    <li><a href="./destinos.html" class="active">DESTINOS</a></li>
-                    <li><a href="./cruceros.html">CRUCEROS</a></li>
-                    <li><a href="./ofertas.html">OFERTAS</a></li>
-                    <li><a href="./contactos.html">CONTACTOS</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <section class="hero hero-destinos">
-            <div class="container">
-                <h2>DESTINOS</h2>
-                <div class="enlaces">
-                    <a href="#centroAmerica">Centro America</a>
-                    <a href="#europa">Europa</a>
-                    <a href="#norteAmerica">Norte America</a>
-                    <a href="#asia">Asia</a>
+        
+        <nav class="navbar navbar-expand-lg bg-transparent navbar-dark">
+            <div class="container-fluid mx-4 p-2 d-flex justify-content-between align-items-center">
+                <div class="row">
+                    <a class="navbar-brand fs-3 fw-bold" href="../index.html">Cruceros JF</a>
+                </div>
+                <div class="row">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav  d-flex column-gap-3">
+                            <li class="nav-item">
+                                <a class="nav-link"  href="../index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="destinos.html">DESTINOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cruceros.html">CRUCEROS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./ofertas.html">OFERTAS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contactos.html">CONTACTOS</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </section>
+        </nav>
+        <div class="container">
+            <div class="row text-white  position-absolute top-50 start-50 translate-middle ">
+                <div class="col-12 text-center scale-in-bottom">
+                    <h2 class="titulo-main fw-bold">Destinos</h2>
+                </div>
+            </div>
+        </div>
     </div>
         <!----------------  DESTINOS TARJETAS  --------------->
 
-    <section class="tarjetas-destinos" id="centroAmerica">
-
-        <div class="destino centro-america">Centro America</div>
-        <div class="destino mexico">Mexico</div>
-        <div class="destino panama">Panama</div>
-        <div class="destino costa-rica">Costa Rica</div>
-
-    </section>
-
-    <section class="tarjetas-destinos" id="europa">
-
-        <div class="destino europa">Europa</div>
-        <div class="destino grecia">Grecia</div>
-        <div class="destino italia">Italia</div>
-        <div class="destino españa">España</div>
-        <div class="destino portugal">Portugal</div>
-
-    </section>
-
-    <section class="tarjetas-destinos"  id="norteAmerica">
-
-        <div class="destino norte-america">Norte America</div>
-        <div class="destino canada">Canada</div>
-        <div class="destino alaska">Alaska</div>
-        <div class="destino florida">Florida</div>
-
-    </section>
-
-    <section class="tarjetas-destinos" id="asia">
-
-        <div class="destino asia">Asia</div>
-        <div class="destino china">China</div>
-        <div class="destino japon">Japon</div>
-        <div class="destino tailandia">Tailandia</div>
-
-    </section>
-
-    <footer>
-
-        <div class="container-footer">
-
-            <div class="links">
-                <ul class="menu-items">
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="./destinos.html">DESTINOS</a></li>
-                <li><a href="./cruceros.html">CRUCEROS</a></li>
-                <li><a href="./ofertas.html">OFERTAS</a></li>
-                <li><a href="./contactos.html">CONTACTOS</a></li>
-                </ul>
+    <div class="container">
+        <div class="row mt-5 d-flex row-gap-4">
+            <div class="col-12 " data-aos="zoom-in">
+                <h4 class="text-center fw-bold">Centro America</h4>
             </div>
-
-            <div class="redes">
-                <a href="#"> <img src="../img/redes/Instagram.png" alt=""> </a>
-                <a href="#"> <img src="../img/redes/Twitter-logo.png" alt=""> </a>
-                <a href="#"> <img src="../img/redes/Facebook.png" alt=""> </a>
-                <a href="#"> <img src="../img/redes/gmail.png" alt=""> </a>
+            <div class="col-lg-4 col-md-6 col-sm-12 " data-aos="zoom-in">
+                <div class="card h-100">
+                    <img src="../img/DESTINOS/mexico2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mexico</h5>
+                        <p>5 noches</p>
+                        <p>Desde $100.000</p>
+                        <p class="card-text">Valoración:<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i> </p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
             </div>
-
-            <div class="copyright">©Copyright Cruceros JF 2023</div>
-
+            <div class="col-lg-4 col-md-6 col-sm-12 " data-aos="zoom-in">
+                <div class="card h-100">
+                    <img src="../img/DESTINOS/panama2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Panama</h5>
+                        <p>5 noches</p>
+                        <p>Desde $100.000</p>
+                        <p class="card-text">Valoración:<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i> </p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 " data-aos="zoom-in">
+                <div class="card h-100">
+                    <img src="../img/DESTINOS/costaRica.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Costa Rica</h5>
+                        <p>5 noches</p>
+                        <p>Desde $100.000</p>
+                        <p class="card-text">Valoración:<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i> </p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="row  mt-5 d-flex row-gap-4">
+            <div class="col-12 " data-aos="zoom-in">
+                <h4 class="text-center fw-bold">Europa</h4>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 " data-aos="zoom-in">
+                <div class="card h-100">
+                    <img src="../img/DESTINOS/españa.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">España</h5>
+                        <p>5 noches</p>
+                        <p>Desde $100.000</p>
+                        <p class="card-text">Valoración:<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i> </p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 " data-aos="zoom-in">
+                <div class="card h-100">
+                    <img src="../img/DESTINOS/grecia.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Grecia</h5>
+                        <p>5 noches</p>
+                        <p>Desde $100.000</p>
+                        <p class="card-text">Valoración:<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i> </p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 " data-aos="zoom-in">
+                <div class="card h-100">
+                    <img src="../img/DESTINOS/italia.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Italia</h5>
+                        <p>5 noches</p>
+                        <p>Desde $100.000</p>
+                        <p class="card-text">Valoración:<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i> </p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 d-flex row-gap-4 mb-5">
+            <div class="col-12 " data-aos="zoom-in">
+                <h4 class="text-center fw-bold">Asía</h4>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 " data-aos="zoom-in">
+                <div class="card h-100">
+                    <img src="../img/DESTINOS/japon.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Japón</h5>
+                        <p>5 noches</p>
+                        <p>Desde $100.000</p>
+                        <p class="card-text">Valoración:<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i> </p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12  " data-aos="zoom-in">
+                <div class="card h-100">
+                    <img src="../img/DESTINOS/china.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>China
+                        <p>5 noches</p>
+                        <p>Desde $100.000</p>
+                        <p class="card-text">Valoración:<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i> </p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 " data-aos="zoom-in">
+                <div class="card h-100">
+                    <img src="../img/DESTINOS/tailandia.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Tailandia</h5>
+                        <p>5 noches</p>
+                        <p>Desde $100.000</p>
+                        <p class="card-text">Valoración:<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i> </p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        
+        
+        
+        <!----------------  FOOTER  --------------->
+    <footer class="footer bg-dark text-white">
+        <div class="container-fluid">
+            <div class="row p-5 d-flex justify-content-around align-items-center row-gap-5">
 
+                <div class="col-md-4 col-sm-6 d-flex flex-column justify-content-center align-items-start column-gap-5">
+                    <h4>Enlaces</h4>
+                    <a class="nav-link"  href="../index.html">HOME</a>
+                    <a class="nav-link" href="destinos.html">DESTINOS</a>
+                    <a class="nav-link" href="cruceros.html">CRUCEROS</a>
+                    <a class="nav-link  active" aria-current="page" href="./ofertas.html">OFERTAS</a>
+                    <a class="nav-link" href="contactos.html">CONTACTOS</a>
+                </div>
+                
+                <div class="col-md-4 col-sm-6 redes d-flex flex-column  align-items-center justify-content-center column-gap-5">
+                    <h4>Redes</h4>
+                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-google"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                </div>
+                
+                <div class="copyright col-md-4 col-sm-12 text-center">©Copyright Cruceros JF 2023</div>
+                
+            </div>
+        </div>   
     </footer>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

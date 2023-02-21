@@ -5,133 +5,140 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cruceros JF | HOME</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
-    <div class="mainImg-home">
+    <div class="mainImg-home position-relative">
             <!---------------- MENU--------------->
-        <header>
-
-            <nav class="nav-bar">
-                <a class="logo" href="index.html">Cruceros <span class="JF">JF</span> </a>
-                <ul class="menu-items">
-                    <li><a href="index.html" class="active">HOME</a></li>
-                    <li><a href="./pages/destinos.html">DESTINOS</a></li>
-                    <li><a href="./pages/cruceros.html">CRUCEROS</a></li>
-                    <li><a href="./pages/ofertas.html">OFERTAS</a></li>
-                    <li><a href="./pages/contactos.html">CONTACTOS</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg bg-transparent navbar-dark">
+                <div class="container-fluid mx-4 p-2 d-flex justify-content-between align-items-center">
+                    <div class="row">
+                        <a class="navbar-brand fs-3 fw-bold" href="../index.html">Cruceros <span class="main-color">JF</span></a>
+                    </div>
+                    <div class="row">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav  d-flex column-gap-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active"  aria-current="page" href="../index.html">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/destinos.html">DESTINOS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/cruceros.html">CRUCEROS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link"  href="./pages/ofertas.html">OFERTAS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/contactos.html">CONTACTOS</a>
+                                </li>
+                                </ul>
+                            </div>
+                    </div>
+    
+                </div>
             </nav>
-
-        </header>
-
             <!---------------- HERO--------------->
-
-        <section class="hero">
             <div class="container">
-                <h2>Cruceros JF</h2>
-                <p>Viajar es lo mas parecido a soñar despierto</p>
-                <div class="btn-container">
-                    <button class="btn"><span></span><a href="./pages/destinos.html"> Explorar</a> </button>
-                    <button class="btn"><span></span><a href="#"> Explorar</a> </button>
+                <div class="row text-white  position-absolute top-50 start-50 translate-middle ">
+                    <div class="col-12 text-center scale-in-bottom">
+                        <h2 class="titulo-main fw-bold">Cruceros JF</h2>
+                        <p>Viajar es lo mas parecido a soñar despierto</p>
+                    </div>
                 </div>
             </div>
-        </section>
-
     </div>
 
-    <!----------------  FORM ENCONTRA TU CRUCERO  --------------->
-
-
-
-    <section class="section-form">
-
-        <div class="backText">Manténgase informado</div>
-    
-        <div class="container">
-
-            <div class="text">
-                <h3>Manténgase informado</h3>
-                <p>Suscríbase al correo electrónico para recibir notificaciones sobre ofertas, nuevas salidas y mucho más</p>
+    <div class="container nosotros my-5">
+        <div class="row d-flex row-gap-3">
+            <div class="col-12 text-center mb-5" >
+                <h4 class="fw-bold secondary-color">Porque elegirnos a nosotros?</h4>
+                <h5 class="fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eveniet ut alias itaque doloremque quasi, neque et incidunt ea voluptatibus similiqu</h5>
             </div>
-
-            <form>
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Apellido">
-                <input type="email" placeholder="Tu correo electronico">
-                <button type="submit">Enviar</button>
-            </form>
-
+            <div class="col-lg-4 col-md-6">
+                <div class="card card-nosotros" data-aos="zoom-out">
+                    <div class="card-body secondary-color px-4 d-flex flex-column align-items-center justify-content-center">
+                        <img class="ajuste-img secondary-color" src="./img/CONTACTOS/ajustes.svg" alt="">
+                        <h5 class="card-title fw-bold ">Razón 1</h5>
+                        <p class="card-text text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque nostrum et soluta, tenetur harum</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card card-nosotros" data-aos="zoom-out">
+                    <div class="card-body secondary-color px-4 d-flex flex-column align-items-center justify-content-center">
+                        <img class="ajuste-img secondary-color" src="./img/CONTACTOS/ajustes.svg" alt="">
+                        <h5 class="card-title fw-bold ">Razón 1</h5>
+                        <p class="card-text text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque nostrum et soluta, tenetur harum</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card card-nosotros" data-aos="zoom-out">
+                    <div class="card-body secondary-color px-4 d-flex flex-column align-items-center justify-content-center">
+                        <img class="ajuste-img secondary-color" src="./img/CONTACTOS/ajustes.svg" alt="">
+                        <h5 class="card-title fw-bold ">Razón 1</h5>
+                        <p class="card-text text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque nostrum et soluta, tenetur harum</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
-    </section>    
-
-
-    <!----------------  TARJETAS DESTINOS  --------------->
-
-
-    <section class="tarjetitas">
-
-        <div class="tarjeta tarjeta1">
-            <h2>Oceania</h2>
-            <button class="btn">Reservar ya</button>
-        </div>
-
-        <div class="tarjeta tarjeta2">
-            <h2>Europa</h2>
-            <button class="btn">Reservar ya</button>
-        </div>
-
-        <div class="tarjeta tarjeta3">
-            <h2>Alaska</h2>
-            <button class="btn">Reservar ya</button>
-        </div>
-
-    </section>
+    </div>
 
     <!----------------  NUEVOS DESTINOS  --------------->
 
-    <section class="nuevos-destinos">
-
-        <div class="conteiner">
-            <h3>Nuevos destinos, nuevas experciencias</h3>
-            <p>Salidas 2024-2025</p>
-            <button class="btn">Saber mas</button>
+    <div class="container-fluid nuevos-destinos">
+        <div class="row">
+            <div class="col-12 text-white text-center mt-5">
+                <h3>Nuevos destinos, nuevas experciencias</h3>
+                <p>Salidas 2024-2025</p>
+                <button class="btn btn-primary">Saber mas</button>
+            </div>
         </div>
-
-    </section>
-
+    </div>
 
     <!----------------  FOOTER  --------------->
 
-    <footer>
+    <footer class="footer bg-dark text-white">
+        <div class="container-fluid">
+            <div class="row p-5 d-flex justify-content-around align-items-center row-gap-5" >
 
-        <div class="container-footer">
-            
-                <div class="links">
-                    <ul class="menu-items">
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="./pages/destinos.html">DESTINOS</a></li>
-                        <li><a href="./pages/cruceros.html">CRUCEROS</a></li>
-                        <li><a href="./pages/ofertas.html">OFERTAS</a></li>
-                        <li><a href="./pages/contactos.html">CONTACTOS</a></li>
-                    </ul>
+                <div class="col-md-4 col-sm-6 d-flex flex-column justify-content-center align-items-center column-gap-5 " data-aos="zoom-in-up">
+                    <h4>Enlaces</h4>
+                    <a class="nav-link"  href="../index.html">HOME</a>
+                    <a class="nav-link" href="destinos.html">DESTINOS</a>
+                    <a class="nav-link" href="cruceros.html">CRUCEROS</a>
+                    <a class="nav-link  active" aria-current="page" href="./ofertas.html">OFERTAS</a>
+                    <a class="nav-link" href="contactos.html">CONTACTOS</a>
                 </div>
-
-                <div class="redes">
-                    <a href="#"> <i class="bi bi-whatsapp"></i> </a>
-                    <a href="#"> <i class="bi bi-instagram"></i> </a>
-                    <a href="#"> <i class="bi bi-twitter"></i> </a>
-                    <a href="#"> <i class="bi bi-facebook"></i> </a>
+                
+                <div class="col-md-4 col-sm-6 redes d-flex flex-column  align-items-center justify-content-center column-gap-5 " data-aos="zoom-in-up">
+                    <h4>Redes</h4>
+                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-google"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
                 </div>
-
-            <div class="copyright">©Copyright Cruceros JF 2023</div>
-
-        </div>
+                
+                <div class="copyright col-md-4 col-sm-12 text-center " data-aos="zoom-in-up">©Copyright Cruceros JF 2023</div>
+                
+            </div>
+        </div>   
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

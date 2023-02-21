@@ -19,470 +19,83 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     position: relative;
 }
-header {
-    background-color: transparent;
-}
 
-.nav-bar {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 40px;
-}
-
-.logo {
-    color: white;
-    font-size: 34px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.JF {
+.main-color {
     color: #48cae4;
 }
 
-.menu-items {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    column-gap: 2em;
-    list-style-type: none;
+.secondary-color {
+    color: #1d3557;
 }
-
-.menu-items li {
-    position: relative;
-}
-
-.menu-items a::after {
-    content: "";
-    height: 3px;
-    width: 0;
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    background-color: #48cae4;
-    transition: .4s;
-}
-
-.menu-items a:hover:after {
-    width: 100%;
-}
-
-.menu-items a:hover,
-.menu-items .active {
-    color: white;
-}
-
-.menu-items a {
-    color: #cac9c9;
-    text-decoration: none;
-}
-
-
 
 /*------------- HERO---------------*/
-.hero {
-    color: #edf2f4;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.hero .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.hero .container h2 {
-    font-weight: bold;
-    font-size: 80px;
-    letter-spacing: 2px;
+.titulo-main {
+    font-size: 70px;
     transition: .5s;
 }
 
-.hero .container h2:hover {
+.titulo-main:hover {
     -webkit-text-stroke: 2px white;
     color: transparent;
     cursor: pointer;
 }
 
-.hero .container p {
-    margin-bottom: 10px;
+/*------------- PORQUE NOSOTROS---------------*/
+
+.active {
+    color: #48cae4 !important;
 }
 
-.hero .btn-container {
-    display: flex;
-    column-gap: 20px;
-}
-
-.hero .container .btn {
-    width: 150px;
-    border-radius: 25px;
-    border: 2px solid #48cae4;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-}
-
-.hero .container .btn span {
-    background-color: #48cae4;
-    height: 100%;
-    width: 0;
-    border-radius: 25px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -100;
-    transition: .8s;
-}
-
-.hero .container .btn:hover span {
-    width: 100%;
-}
-
-.hero .container .btn:hover {
-    border: none;
-}
-
-
-.hero .container .btn a {
-    color: white;
-    text-decoration: none;
-}
-
-
-/*------------- FORM ENCONTRA TU CRUCERO (HOME)----------------*/
-
-.section-form {
-    width: 100%;
-    height: 100vh;
-    background:linear-gradient(to top, #457b9d, #1d3557, #141728) ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: -2;
-    position: relative;
-    overflow: hidden;
-} 
-
-.section-form .backText {
-    font-size: 100px;
-    color: #020d16;
-    opacity: .1;
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    scale: 1.5;
-}
-
-.section-form .container {
-    width: 300px;
-    height: 500px;
-    background-color: white;
-    box-shadow: 0 15px 25px rgba(0,0,0,.6);
-    padding: 10px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.section-form .container .text {
-    text-align: center;
-}
-
-.section-form .container .text h3 {
-    font-weight: bold;
-    color: #457b9d;
-}
-
-.section-form .container form {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-}
-
-.section-form .container form input {
-    outline: none;
-    padding: 5px 10px;
-    border: 1px solid #020d16;
-    
-    border-radius: 20px;
-}
-
-.section-form .container form button {
-    padding: 10px 20px;
-    width: 110px;
-    margin: 0 auto;
-    border: 2px solid #457b9d;
-    border-radius: 5px;
-    color: #457b9d;
-    font-weight: bold;
+.card-nosotros {
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: .5s;
 }
 
-.section-form .container form button:hover {
-    color: white;
-    background-color: #457b9d;
-}
-
-/*-------------         TARJETITAS       ----------------*/
-
-.tarjetitas {
-    height: 80vh;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.tarjetitas h3 {
-    text-align: center;
-}
-
-.tarjetitas .tarjeta {
-    height: 400px;
-    width: 300px;
-    border-radius: 10px;
-    color: white;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-top: 20px ;
-    align-items: center;
-    filter: grayscale(.4);
-    transition: .5s;
-}
-
-.tarjetitas .tarjeta:hover {
-    transform: scale(1.1);
-    filter: grayscale(0);
+.card-nosotros:hover {
     cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
-.tarjetitas .tarjeta h2 {
-    color: white;
+.ajuste-img {
+    height: 70px;
+    width: 70px;
 }
-
-.tarjeta1{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) ,url(../img/HOME/oceania.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-}
-
-.tarjeta2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) ,url(../img/HOME/europa.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-.tarjeta3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) ,url(../img/HOME/alaska.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-
 
 /*------------- PROPAGANDA NUEVOS DESTNOS----------------*/
 
 .nuevos-destinos {
-    margin-block: 20px;
-    width: 100%;
     height: 400px;
     background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/HOME/nuevosDestinos.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.nuevos-destinos .conteiner {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.btn {
-    background-color: transparent;
-    border: 1px solid white;
-    color: white;
-    padding: 10px 20px;
 }
 
 
 /*------------- PAGE DESTINOS----------------*/
+.card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: .5s;
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
 
 .mainImg-destinos {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/DESTINOS/main.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     position: relative;
     height: 100vh;
-}
-
-
-.hero-destinos .enlaces {
-    display: flex;
-    column-gap: 30px;
-}
-
-.hero-destinos .enlaces a {
-    color: white;
-    text-decoration: none;
-    position: relative;
-}
-
-.hero-destinos .enlaces a::after {
-    content: "";
-    width: 0;
-    height: 3px;
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #48cae4;
-    transition: .5s;
-}
-
-.hero-destinos .enlaces a:hover::after {
-    width: 50%;
-}
-
-
-
-
-
-/*------------- DESTINOS TARJETAS ---------------*/
-
-.tarjetas-destinos {
-    margin-inline: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: left;
-    column-gap: 1em;
-}
-
-.tarjetas-destinos .destino {
-    height: 400px;
-    width: 200px;
-    margin-block: 15px;
-    background-color: #48cae4;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 10px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.tarjetas-destinos .destino:hover {
-    transform: scaleX(1);
-    z-index: 2;
-}
-
-
-/*------------- CENTRO AMERICA ---------------*/
-
-.tarjetas-destinos .centro-america {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url(../img/DESTINOS/centroamerica.jpg);
-}
-
-.tarjetas-destinos .mexico {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/DESTINOS/mexico.jpg);
-
-}
-
-.tarjetas-destinos .panama {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/DESTINOS/panama.jpg);
-
-}
-
-.tarjetas-destinos .costa-rica {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/DESTINOS/costaRica.jpg);
-}
-
-/*------------- DESTINOS  - EUROPA ---------------*/
-
-.tarjetas-destinos .europa {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/DESTINOS/europa.jpg);
-}
-
-.tarjetas-destinos .grecia {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/DESTINOS/grecia.jpg);
-}
-
-.tarjetas-destinos .italia {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/DESTINOS/italia.jpg);
-}
-
-
-.tarjetas-destinos .españa {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/DESTINOS/españa.jpg);
-}
-
-
-.tarjetas-destinos .portugal {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/DESTINOS/portugal.jpg);
-}
-
-/*------------- DESTINOS  - NORTE AMERICA ---------------*/
-
-.tarjetas-destinos .norte-america {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/DESTINOS/norteAmerica.jpg);
-}
-
-.tarjetas-destinos .canada {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/DESTINOS/canada.jpg);
-}
-
-.tarjetas-destinos .alaska {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/DESTINOS/alaska.jpg);
-}
-
-.tarjetas-destinos .florida {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/DESTINOS/florida.jpg);
-}
-
-/*------------- DESTINOS  - ASIA ---------------*/
-
-.tarjetas-destinos .asia {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/DESTINOS/asia.jpg);
-}
-
-.tarjetas-destinos .china {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/DESTINOS/china.jpg);
-}
-
-.tarjetas-destinos .japon {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/DESTINOS/japon.jpg);
-}
-
-.tarjetas-destinos .tailandia {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/DESTINOS/tailandia.jpg);
 }
 
 /*------------- MAIN (OFERTAS)----------------*/
@@ -493,142 +106,14 @@ header {
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 }
-
-.form-oferta{
-    width: 50%;
-    text-align: left;
-    background-color: rgba(0, 0, 0, 0.4);
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.form-oferta h2 {
-    font-size: 34px;
-}
-
-.form-oferta h2 span {
-    color: #48cae4;
-}
-
-.form-oferta h3 {
-    margin-block: 20px;
-}
-
-
-.form-oferta form label {
-    display: block;
-}
-
-.form-oferta .btn {
-    margin-top: 20px;
-}
-
-/*------------- LO MAS VENDIDO DE OFERTAS----------------*/
-
-.masBuscado h3 {
-    margin-left:40px;
-    margin-top: 25px;
-    font-size: 25px;
-}
-
-.masBuscado .titulo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.masBuscado h3 span {
-    text-align: center;
-    color: #48cae4;
-}
-
-.cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 15px;
-}
-
-.cards .card {
-    width: 300px;
-    height: 400px;
-    border-radius: 10px;
-    background-color: #020d16;
-    color: white;
-    text-align: center;
-}
-
-.card .body h4 {
-    color: #48cae4;
-    margin-top: 10px;
-    font-size: 25px;
-}
-
-.card .body .btn {
-    border: 1px solid #48cae4;
-    margin-top: 10px;
-}
-
-.img {
-    width: 300px;
-    height: 200px;
-}
-
-.img img {
-    max-width: 100%;
-    height: 200px;
-    width: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-
 
 /*------------- PAQUETE DE TRAGOS E INTERNET----------------*/
-.tragosInternet {
-    margin-block: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 10px;
-}
-
-.tragos,
-.internet {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 5px;
-    text-align: center;
-    padding-top: 50px;
-}
-
-.tragos,
-.internet h3 {
-    color: #48cae4;
-    font-size: 25px;
-    padding-bottom: 10px;
-}
-
-.tragos {
-    width: 600px;
-    height: 500px;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/OFERTAS/tragos.jpg);
-}
-
-.internet {
-    width: 600px;
-    height: 500px;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/OFERTAS/internet.jpg);
+.carousel-item {
+    height: 80vh;
+    object-fit: cover;
 }
 
 
@@ -639,85 +124,12 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 120vh;
+    background-attachment: fixed;
+    height: 110vh;
     position: relative;
 }
 
-.form-contacto{
-    width: 70%;
-    height: 80vh;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    color: white;
-    padding: 20px;
-    
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
 
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.Form {
-    height: 400px;
-    width: 400px;
-    border-right: 1px solid white;
-    padding-inline: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-}
-
-.Form input {
-    padding: 5px;
-}
-
-.Form textarea {
-    height: 100px;
-}
-
-.Form .btn-contactos {
-    margin: 10px 50px;
-    background: none;
-    border: 2px solid #48cae4;
-    color: #48cae4;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: .5s;
-    position: relative;
-    overflow: hidden;
-}
-
-.btn-contactos:hover {
-    color: white;
-}
-
-.btn-contactos::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 0;
-    background-color: #48cae4;
-    border-radius: 0 0 50% 50%;
-    z-index: -1;
-    transition: .5s;
-}
-
-.btn-contactos:hover::before {
-    height: 180%;
-
-}
-
-.contactos h2 {
-    color: #48cae4;
-}
 
 /*------------- PAGES CRUCEROS----------------*/
 
@@ -726,134 +138,15 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     height: 100vh
 }
 
-.cruceros-header .titulo-hero  a {
-    padding-right: 20px;
-    color: white;
-    text-decoration: none;
-}
-
-.cruceros-section {
-    margin: 30px;
-}
-
-.flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.cruceros-section .card1,
-.cruceros-section .card2 {
-    height: 400px;
-    width: 600px;
-}
-
-.nuestra-flota .card,
-.proxima .card1,
-.new .card2  {
-    color: white;
-    border-radius: 5px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container-nuestraFlota {
-    height: 200vh;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 20px;
-    grid-template-areas: 
-    "card3 card3 card3"
-    "card4 card5 card6"
-    "card4 card5 card6"
-    "card7 card7 card8"
-    "card9 card9 card8";
-}
-
-.proxima .card1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/CRUCEROS/card1.jpg);
-}
-
-.new .card2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/CRUCEROS/card2.jpg);
-}
-
-.nuestra-flota .card3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/CRUCEROS/card3.jpg);
-    grid-area: card3;
-}
-
-.nuestra-flota .card4 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/CRUCEROS/card4.jpg);
-    grid-area: card4;
-}
-
-.nuestra-flota .card5 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/CRUCEROS/card5.jpg);
-    grid-area: card5;
-}
-
-.nuestra-flota .card6 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/CRUCEROS/card6.jpg);
-    grid-area: card6;
-}
-
-.nuestra-flota .card7 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/CRUCEROS/card7.jpg);
-    grid-area: card7;
-}
-
-.nuestra-flota .card8 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/CRUCEROS/card8.jpg);
-    grid-area: card8;
-}
-
-.nuestra-flota .card9 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/CRUCEROS/card9.jpg);
-    grid-area: card9;
-}
-
-
 /*-------------        FOOTER       ----------------*/
 
-
-.container-footer {
-    background-color: #020d16;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.redes {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    column-gap: 30px;
-}
-
-.redes a i {
-    color: white;
-    height: 75px;
-    padding: 10px;
-    width: 75px;
-    border-radius: 50%;
-    border: 5px solid white;
-    cursor: pointer;
-}
-
-.copyright {
-    color: white;
-
+.footer {
+    height: 300px;
+    background-color: #091629 !important;
 }
 
 /*-------------        MEDIA QUERIAS 768PX     ----------------*/
@@ -862,16 +155,11 @@ header {
     /*-------------      PAGINA HOME   ----------------*/
 
     .hero {
-        width: 80%;
+        width: 80% !important;
     }
 
     .hero .container h2 {
         font-size: 75px;
-    }
-    
-    .tarjetitas {
-        height: 150vh;
-        row-gap: 20px;
     }
 
         /*-------------      PAGINA OFERTAS   ----------------*/
@@ -880,6 +168,18 @@ header {
         flex-wrap: wrap;
         row-gap: 20px;
     }
+
+        /*-------------      PAGINA OFERTAS   ----------------*/
+
+    .mainImg-contactos {
+        height: 200vh;
+    }
+
+    /*-------------      PAGINA OFERTAS   ----------------*/
+
+    .footer {
+        height: 520px;
+    }
 }
 
 /*-------------        MEDIA QUERIAS 480PX     ----------------*/
@@ -887,11 +187,6 @@ header {
 @media screen and (max-width: 480px) {
     
         /*-------------      PAGINA HOME   ----------------*/
-
-    .hero {
-        margin-top: 40px;
-    }
-
     .hero .container h2 {
         font-size: 48px
     }
@@ -899,120 +194,25 @@ header {
         font-size: 14px;
     }
 
-    .tarjetitas {
-        flex-direction: column;
-        row-gap: 10px;
-        height: 250vh;
-    }
-
-
-    .nuevos-destinos .conteiner {
-        padding: 10px;
-    }
-
-    .nuevos-destinos .conteiner h3 {
-        font-size: 20px;
-    }
-
         /*-------------      FOOTER      ----------------*/
 
-    .container-footer {
-        height: 300px;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-
-    .menu-items,
-    .redes {
-        flex-direction: column;
-        align-items: flex-start;
-        row-gap: 15px;
-        width: 200px;
-        align-items: center;
-    }
-
-    .redes {
-        column-gap: 0px;
-    }
-
-
-    /*-------------      PAGINA CRUCEROS       ----------------*/
-
-    .cruceros-section .flex {
-        margin-inline: 30px;
-        flex-direction: column;
-        height: 150vh;
-    }
-
-    .cruceros-section .card1,
-    .cruceros-section .card2 {
-        width: 420px;
-    } 
-
-
-    .nuestra-flota {
-        margin-top: 40px;
-    }
-
-    .container-nuestraFlota {
-        display: flex;
-        flex-direction: column;
-        height: 300vh;
-    }
-
-    .container-nuestraFlota .card {
-        height: 400px;
-    }
-
-/*-------------        PAGINA OFERTAS      ----------------*/
-
-    .form-oferta {
-        width: 90%;
-        margin-top: 50px;
-
-    }
-
-    .form-oferta .text-ofertas h2 {
-        font-size: 20px;
-    }
-
-    .tragosInternet {
-        flex-direction: column;
-        row-gap: 10px;
-    }
-
-    .tragosInternet .tragos,
-    .tragosInternet .internet {
-        width: 400px;
+    .footer {
+        height: 520px;
     }
 
     /*-------------        PAGINA CONTACTOS     ----------------*/
 
     .mainImg-contactos {
-        height: 250vh;
+        height: 200vh;
     }
+} 
+    /*-------------        ANIMISTA     ----------------*/
 
-    .form-contacto {
-        width: 90%;
-        height: 170vh;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        row-gap: 30px;
-    }
+.nav-link,
+.navbar-brand{-webkit-animation:puff-in-center .7s cubic-bezier(.47,0.000,.745,.715) both;animation:puff-in-center .7s cubic-bezier(.47,0.000,.745,.715) both}
 
-    .form {
-        width: 100%;
-        border-right: z-index;
-    }
+@-webkit-keyframes puff-in-center{0%{-webkit-transform:scale(2);transform:scale(2);-webkit-filter:blur(4px);filter:blur(4px);opacity:0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes puff-in-center{0%{-webkit-transform:scale(2);transform:scale(2);-webkit-filter:blur(4px);filter:blur(4px);opacity:0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-filter:blur(0);filter:blur(0);opacity:1}}
 
-    .contactos {
-        border-top: 1px solid white;
-        padding-top: 20px;
-        display: flex;
-        flex-direction: column;
-        row-gap: 10px;
-    }
+.scale-in-bottom{-webkit-animation:scale-in-bottom .5s cubic-bezier(.25,.46,.45,.94) both;animation:scale-in-bottom .5s cubic-bezier(.25,.46,.45,.94) both}
 
-}
+@-webkit-keyframes scale-in-bottom{0%{-webkit-transform:scale(0);transform:scale(0);-webkit-transform-origin:50% 100%;transform-origin:50% 100%;opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 100%;transform-origin:50% 100%;opacity:1}}@keyframes scale-in-bottom{0%{-webkit-transform:scale(0);transform:scale(0);-webkit-transform-origin:50% 100%;transform-origin:50% 100%;opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 100%;transform-origin:50% 100%;opacity:1}}
