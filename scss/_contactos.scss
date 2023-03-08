@@ -1,0 +1,38 @@
+
+.mainImg-contactos {
+    background-color: $pink;
+    height: 110vh;
+    position: relative;
+}
+
+.padre {
+    background-color: white;
+
+  
+    
+    .contactanos {
+        h4 {
+            color: $darkPink;
+            border-bottom: 1px solid $darkPink ;
+        }
+
+        form {
+            label {
+                color: $darkPink;
+            }
+        }
+    }
+
+    .buscanos {
+        background-color: $darkPink;
+
+        h4 {
+            color: white;
+
+        }
+
+        i, .redes {
+            font-size: 20px;
+        }
+    }
+}

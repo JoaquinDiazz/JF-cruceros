@@ -1,0 +1,146 @@
+// --------------HERO-----------
+.mainImg-home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../img/HOME/main3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+.hero-home {
+
+  .titulo-main {
+    font-size: 70px;
+    transition: 0.5s;
+
+    &:hover {
+      -webkit-text-stroke: 2px white;
+      color: transparent;
+      cursor: pointer;
+    }
+  }
+}
+
+// -------------- PORQUE NOSOTROS---------------
+.nosotros {
+  display: flex;
+  align-items: center;
+
+  .titulo-nosotros {
+    h4 {
+      border-bottom: 3px solid $darkPink;
+      padding-bottom: 10px;
+      font-size: 30px;
+
+      span {
+        color: $darkPink;
+      }
+    }
+  }
+
+  .card-nosotros {
+    height: 250px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.5s;
+    background-color: $darkPink;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      transform: translateY(-10px);
+    }
+
+    .card-title-nosotros {
+      color: black;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .ajuste-img {
+      height: 70px;
+      width: 70px;
+    }
+  }
+}
+
+// ---------------NUEVOS DESTINOS-------------
+
+.nuevos-destinos {
+  height: 400px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../img/HOME/nuevosDestinos.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// --------------  OPINION CLIENTES ---------------
+
+.opinion-clientes {
+  background-color: #df928e;
+
+  .card {
+    height: 300px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    transition: 0.5s;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+      transform: translateY(10px);
+    }
+
+    .texto {
+      .comillas {
+        height: 70px;
+        width: 70px;
+        color: #df928e;
+        font-size: 70px;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .pie {
+      display: flex;
+      justify-content: space-between;
+
+      .text {
+        .nombre {
+          font-weight: bolder;
+          font-size: 20px;
+        }
+
+        .estrellas {
+          color: #df928e;
+          font-size: 20px;
+
+          span {
+            color: black;
+            padding-left: 10px;
+          }
+        }
+      }
+
+      img {
+        height: 90px;
+        width: 90px;
+      }
+    }
+  }
+}
+
+
+
+  
+  

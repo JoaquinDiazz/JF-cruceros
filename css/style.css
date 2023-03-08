@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap');
 
 * {
     padding: 0;
@@ -10,10 +10,10 @@
 *::selection {
     background-color: black;
     color: white;
-}
+} */
 
 /*------------- HEADER---------------*/
-.mainImg-home {
+/* .mainImg-home {
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/HOME/main3.jpg");
     background-position: center;
@@ -21,18 +21,12 @@
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-}
+} */
 
-.main-color {
-    color: #48cae4;
-}
 
-.secondary-color {
-    color: #1d3557;
-}
 
 /*------------- HERO---------------*/
-.titulo-main {
+/* .titulo-main {
     font-size: 70px;
     transition: .5s;
 }
@@ -41,15 +35,15 @@
     -webkit-text-stroke: 2px white;
     color: transparent;
     cursor: pointer;
-}
+} */
 
 /*------------- PORQUE NOSOTROS---------------*/
 
-.active {
+/* .active {
     color: #48cae4 !important;
-}
+} */
 
-.card-nosotros {
+/* .card-nosotros {
     height: 300px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: .5s;
@@ -63,22 +57,22 @@
 .ajuste-img {
     height: 70px;
     width: 70px;
-}
+} */
 
 /*------------- PROPAGANDA NUEVOS DESTNOS----------------*/
 
-.nuevos-destinos {
+/* .nuevos-destinos {
     height: 400px;
     background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/HOME/nuevosDestinos.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-}
+} */
 
 
 /*------------- PAGE DESTINOS----------------*/
-.card {
+/* .card {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: .5s;
 }
@@ -96,11 +90,11 @@
     background-attachment: fixed;
     position: relative;
     height: 100vh;
-}
+} */
 
 /*------------- MAIN (OFERTAS)----------------*/
 
-.mainImg-ofertas {
+/* .mainImg-ofertas {
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/OFERTAS/main.jpg");
     position: relative;
@@ -108,13 +102,13 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-}
+} */
 
 /*------------- PAQUETE DE TRAGOS E INTERNET----------------*/
-.carousel-item {
+/* .carousel-item {
     height: 80vh;
     object-fit: cover;
-}
+} */
 
 
 /*------------- PAGES CONTACTOS----------------*/
@@ -144,10 +138,10 @@
 
 /*-------------        FOOTER       ----------------*/
 
-.footer {
+/* .footer {
     height: 300px;
     background-color: #091629 !important;
-}
+} */
 
 /*-------------        MEDIA QUERIAS 768PX     ----------------*/
 
@@ -196,9 +190,9 @@
 
         /*-------------      FOOTER      ----------------*/
 
-    .footer {
+    /* .footer {
         height: 520px;
-    }
+    } */
 
     /*-------------        PAGINA CONTACTOS     ----------------*/
 

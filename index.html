@@ -1,144 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="La empresa de cruceros con mas experiencia y trayectoria de Argentina"
+    />
+    <meta
+      name="keywords"
+      content="Cruceros, Viajes, Turismo, Ofertas, Vacaciones, Argentina, Promociones"
+    />
     <title>Cruceros JF | HOME</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-
+    <!----------------- ICONO----------->
+    <link rel="icon" href="./img/HOME/icon.png" />
+    <!----------------- BOOTSTRAP ICONS----------->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <!----------------- BOOTSTRAP ----------->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!----------------- AOS ----------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!----------------- CSS ----------->
+    <link rel="stylesheet" href="./css/estilo.css" />
+  </head>
+  <body>
     <div class="mainImg-home position-relative">
-            <!---------------- MENU--------------->
-            <nav class="navbar navbar-expand-lg bg-transparent navbar-dark">
-                <div class="container-fluid mx-4 p-2 d-flex justify-content-between align-items-center">
-                    <div class="row">
-                        <a class="navbar-brand fs-3 fw-bold" href="../index.html">Cruceros <span class="main-color">JF</span></a>
-                    </div>
-                    <div class="row">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarNav">
-                                <ul class="navbar-nav  d-flex column-gap-3">
-                                <li class="nav-item">
-                                    <a class="nav-link active"  aria-current="page" href="../index.html">HOME</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./pages/destinos.html">DESTINOS</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./pages/cruceros.html">CRUCEROS</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link"  href="./pages/ofertas.html">OFERTAS</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./pages/contactos.html">CONTACTOS</a>
-                                </li>
-                                </ul>
-                            </div>
-                    </div>
-    
-                </div>
-            </nav>
-            <!---------------- HERO--------------->
-            <div class="container">
-                <div class="row text-white  position-absolute top-50 start-50 translate-middle ">
-                    <div class="col-12 text-center scale-in-bottom">
-                        <h2 class="titulo-main fw-bold">Cruceros JF</h2>
-                        <p>Viajar es lo mas parecido a soñar despierto</p>
-                    </div>
-                </div>
+      <!----------------- NAVBAR ----------->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a href="" class="navbar-brand logo">
+            <img src="./img/HOME/icon.png" alt="Logo" title="Logo" />
+            <h1>Cruceros <span>JF</span></h1>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse d-flex justify-content-evenly"
+            id="menu"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="./index.html" class="nav-link item">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a href="./pages/destinos.html" class="nav-link item"
+                  >DESTINOS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="./pages/cruceros.html" class="nav-link item"
+                  >CRUCEROS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="./pages/ofertas.html" class="nav-link item">OFERTAS</a>
+              </li>
+              <li class="nav-item">
+                <a href="./pages/contactos.html" class="nav-link item"
+                  >CONTACTOS</a
+                >
+              </li>
+            </ul>
+            <ul class="navbar-var buttons">
+              <button class="secondary-btn">Ingresar</button>
+              <button class="main-btn">Registrarse</button>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!----------------    HERO    --------------->
+
+      <div class="container hero-home">
+        <div
+          class="row text-white position-absolute top-50 start-50 translate-middle w-75"
+        >
+          <div class="col-lg-12 text-center">
+            <h2 class="titulo-main fw-bold">EXPLORA EL MUNDO</h2>
+            <p>Elige tus destinos favoritos y viaja ahora</p>
+            <div class="d-flex justify-content-center column-gap-3">
+              <a href="./pages/destinos.html"
+                ><button class="secondary-btn">Ver destinos</button></a
+              >
+              <a href="./pages/contactos.html"
+                ><button class="secondary-btn">Contactanos</button></a
+              >
             </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="container nosotros my-5">
-        <div class="row d-flex row-gap-3">
-            <div class="col-12 text-center mb-5" >
-                <h4 class="fw-bold secondary-color">Porque elegirnos a nosotros?</h4>
-                <h5 class="fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eveniet ut alias itaque doloremque quasi, neque et incidunt ea voluptatibus similiqu</h5>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="card card-nosotros" data-aos="zoom-out">
-                    <div class="card-body secondary-color px-4 d-flex flex-column align-items-center justify-content-center">
-                        <img class="ajuste-img secondary-color" src="./img/CONTACTOS/ajustes.svg" alt="">
-                        <h5 class="card-title fw-bold ">Razón 1</h5>
-                        <p class="card-text text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque nostrum et soluta, tenetur harum</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="card card-nosotros" data-aos="zoom-out">
-                    <div class="card-body secondary-color px-4 d-flex flex-column align-items-center justify-content-center">
-                        <img class="ajuste-img secondary-color" src="./img/CONTACTOS/ajustes.svg" alt="">
-                        <h5 class="card-title fw-bold ">Razón 1</h5>
-                        <p class="card-text text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque nostrum et soluta, tenetur harum</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="card card-nosotros" data-aos="zoom-out">
-                    <div class="card-body secondary-color px-4 d-flex flex-column align-items-center justify-content-center">
-                        <img class="ajuste-img secondary-color" src="./img/CONTACTOS/ajustes.svg" alt="">
-                        <h5 class="card-title fw-bold ">Razón 1</h5>
-                        <p class="card-text text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque nostrum et soluta, tenetur harum</p>
-                    </div>
-                </div>
-            </div>
+    <!----------------PORQUE NOSOTROS--------------->
+
+    <div class="container nosotros p-5">
+      <div class="row d-flex row-gap-3">
+        <div class="titulo-nosotros col-12 text-center">
+          <h4 class="fw-bold">
+            Why choose <span class="main-color">us?</span>
+          </h4>
         </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card card-nosotros" data-aos="zoom-out">
+            <div
+              class="card-body px-4 d-flex flex-column align-items-center justify-content-center"
+            >
+              <img
+                class="ajuste-img"
+                src="./img/HOME/atencion-medica.png"
+                alt="Atención medica"
+                title="Atención medica"
+              />
+              <h5 class="card-title-nosotros fw-bold">Atención medica</h5>
+              <p class="card-text text-center">
+                Con disponibilidad 24hs durante su estadia
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card card-nosotros" data-aos="zoom-out">
+            <div
+              class="card-body px-4 d-flex flex-column align-items-center justify-content-center"
+            >
+              <img class="ajuste-img" src="./img/HOME/avion.png" alt="Ofertas vuelos" title="Ofertas vuelos" />
+              <h5 class="card-title-nosotros fw-bold">Ofertas en vuelos</h5>
+              <p class="card-text text-center">
+                Inluyendo en las ofertas el transporte desde el aeropuerto al
+                hotel
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card card-nosotros" data-aos="zoom-out">
+            <div
+              class="card-body px-4 d-flex flex-column align-items-center justify-content-center"
+            >
+              <img
+                class="ajuste-img"
+                src="./img/HOME/family.png"
+                alt="Entretenimiento"
+                title="Entretenimiento"
+              />
+              <h5 class="card-title-nosotros fw-bold">
+                Actividades para toda la familia
+              </h5>
+              <p class="card-text text-center">
+                Como cine 3D, una librería familiar, juegos de piscina, noches
+                de karaoke y mucho más.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card card-nosotros" data-aos="zoom-out">
+            <div
+              class="card-body px-4 d-flex flex-column align-items-center justify-content-center"
+            >
+              <img
+                class="ajuste-img"
+                src="./img/HOME/food.png"
+                alt="Restaurantes"
+                title="Restaurantes"
+              />
+              <h5 class="card-title-nosotros fw-bold">
+                Variedad de restaurantes
+              </h5>
+              <p class="card-text text-center">
+                Ofrecemos comida china, mexicana, española, italiana y más.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card card-nosotros" data-aos="zoom-out">
+            <div
+              class="card-body px-4 d-flex flex-column align-items-center justify-content-center"
+            >
+              <img
+                class="ajuste-img"
+                src="./img/HOME/gym.png"
+                alt="Gimnasio"
+                title="Gimnasio"
+              />
+              <h5 class="card-title-nosotros fw-bold">Gimnasio</h5>
+              <p class="card-text text-center">
+                Para permitir a los pasajeros mantener una vida activa durante
+                el viaje
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card card-nosotros" data-aos="zoom-out">
+            <div
+              class="card-body px-4 d-flex flex-column align-items-center justify-content-center"
+            >
+              <img
+                class="ajuste-img"
+                src="./img/HOME/bebe.png"
+                alt="Niñeras"
+                title="Niñeras"
+              />
+              <h5 class="card-title-nosotros fw-bold">Niñeras</h5>
+              <p class="card-text text-center">
+                Para permitir a los papás poder explorar el crucero, disfrutar
+                del spa, espectaculos musicales o solo tomar el sol
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!----------------  NUEVOS DESTINOS  --------------->
 
     <div class="container-fluid nuevos-destinos">
-        <div class="row">
-            <div class="col-12 text-white text-center mt-5">
-                <h3>Nuevos destinos, nuevas experciencias</h3>
-                <p>Salidas 2024-2025</p>
-                <button class="btn btn-primary">Saber mas</button>
-            </div>
+      <div class="row" data-aos="fade-up">
+        <div class="col-12 text-white text-center">
+          <h3>Nuevos destinos, nuevas experciencias</h3>
+          <p>Salidas 2024-2025</p>
+          <button class="secondary-btn">Saber mas</button>
         </div>
+      </div>
+    </div>
+
+    <!----------------  OPINION CLIENTES  --------------->
+
+    <div class="container-fluid opinion-clientes py-5">
+      <div
+        class="row d-flex align-items-center justify-content-center row-gap-3 column-gap-3"
+        data-aos="fade-up"
+      >
+        <div class="col-12">
+          <h4 class="text-center fw-bolder text-white fs-1">Reseñas de nuestros clientes</h4>
+        </div>
+        <div class="card col-lg-4 col-md-6 col-sm-12"> 
+          <div class="texto">
+            <div class="comillas"><i class="bi bi-quote"></i></div>
+            <div class="">
+              Excelente empresa de cruceros, esta es nuestra segunda vez de viajar con ellos, buen precio, excelentes barcos y la información a la mano. Super recomendado!
+            </div>
+          </div>
+          <div class="pie">
+            <div class="text">
+              <p class="nombre">Jose Gonzáles</p>
+              <p class="estrellas">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><span>5.0</span>
+              </p>
+            </div>
+            <div class="foto">
+              <img src="./img/HOME/chico.png" alt="Foto usuario" title="Foto usuario" />
+            </div>
+          </div>
+        </div>
+        <div class="card col-lg-4 col-md-6 col-sm-12">
+          <div class="texto">
+            <div class="comillas"><i class="bi bi-quote"></i></div>
+            <div class="">
+              El barco impresionante. Hay diversión para todas las edades. El camarote familiar esta suficientemente equipado. La comida del restaurante asignado esta buenísima.
+            </div>
+          </div>
+          <div class="pie">
+            <div class="text">
+              <p class="nombre">Lorena López</p>
+              <p class="estrellas">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star"></i><span>4.0</span>
+              </p>
+            </div>
+            <div class="foto">
+              <img src="./img/HOME/girl.png" alt="Foto usuario" title="Foto usuario" />
+            </div>
+          </div>
+        </div>
+        <div class="card col-lg-4 col-md-6 col-sm-12">
+          <div class="texto">
+            <div class="comillas"><i class="bi bi-quote"></i></div>
+            <div class="">
+              Es la primera vez en hago un crucero y solo. La organización es muy buena, los tours estan muy bien preparados. Me encanto todo! 
+            </div>
+          </div>
+          <div class="pie">
+            <div class="text">
+              <p class="nombre">Carlos García</p>
+              <p class="estrellas">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-half"><span>4.5</span></i>
+              </p>
+            </div>
+            <div class="foto">
+              <img src="./img/HOME/man.png" alt="Foto usuario" title="Foto usuario" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!----------------  FOOTER  --------------->
 
-    <footer class="footer bg-dark text-white">
-        <div class="container-fluid">
-            <div class="row p-5 d-flex justify-content-around align-items-center row-gap-5" >
+    <div class="footer container-fluid p-5">
+      <div
+        class="row d-flex align-items-start justify-content-between row-gap-5 align-content-center" 
+        data-aos="fade-up"
+      >
+        <div
+          class="redes col-lg-3 col-md-4 col-sm-6 d-flex flex-column row-gap-2"
+        >
+          <div class="logo d-flex column-gap-3">
+            <img src="./img/HOME/icon.png" alt="Logo" title="Logo" />
+            <h1>Cruceros <span>JF</span></h1>
+          </div>
+          <div class="d-flex column-gap-3">
+            <a href="#" class="red red-facebook"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a href="#" class="red red-twitter"
+              ><i class="bi bi-twitter"></i
+            ></a>
+            <a href="#" class="red red-instagram"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="#" class="red red-whatsapp"
+              ><i class="bi bi-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+        <div class="links col-lg-3 col-md-4 col-sm-6 d-flex flex-column">
+          <h4>Links</h4>
+          <div class="d-inline-block mb-2">
+            <a href="./index.html" class="item active">Home</a>
+          </div>
+          <div class="d-inline-block mb-2">
+            <a href="../pages/destinos.html" class="item">Destinos</a>
+          </div>
+          <div class="d-inline-block mb-2">
+            <a href="../pages/cruceros.html" class="item">Cruceros</a>
+          </div>
+          <div class="d-inline-block mb-2">
+            <a href="../pages/ofertas.html" class="item">Ofertas</a>
+          </div>
+          <div class="d-inline-block mb-2">
+            <a href="../pages/contactos.html" class="item">Contactos</a>
+          </div>
+        </div>
+        <div class="contactos col-lg-3 col-md-4 col-sm-12 d-flex flex-column">
+          <h4>Contactos</h4>
+          <div class="d-flex column-gap-3">
+            <img src="./img/HOME/telefono.png" alt="Telefono" />
+            <p>3834908750</p>
+          </div>
+          <div class="d-flex column-gap-3">
+            <img src="./img/HOME/correo-electronico.png" alt="Email" />
+            <p>lorem@gmail.com</p>
+          </div>
+          <div class="d-flex column-gap-3">
+            <img src="./img/HOME/alfiler.png" alt="Dirección" />
+            <p>Calle falsa 123</p>
+          </div>
+          <div class="d-flex column-gap-3">
+            <img src="./img/HOME/abierto.png" alt="Horario" />
+            <p>8:00am a 19:00pm</p>
+          </div>
+        </div>
+        <div
+          class="suscripcion col-lg-3 col-md-6 col-sm-12 mb-5 d-flex flex-column"
+        >
+          <h4>Suscribase para recibir las ultimas noticias</h4>
+          <input type="email" placeholder="Ingrese su gmail" />
+          <button class="main-btn mt-3">Enviar</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="copyright col-12">
+          <p>
+            Cruceros JF Copyright © 2010-2023. Todos los derechos reservados
+          </p>
+        </div>
+      </div>
+    </div>
 
-                <div class="col-md-4 col-sm-6 d-flex flex-column justify-content-center align-items-center column-gap-5 " data-aos="zoom-in-up">
-                    <h4>Enlaces</h4>
-                    <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
-                    <a class="nav-link" href="destinos.html">DESTINOS</a>
-                    <a class="nav-link" href="cruceros.html">CRUCEROS</a>
-                    <a class="nav-link"  href="./ofertas.html">OFERTAS</a>
-                    <a class="nav-link" href="contactos.html">CONTACTOS</a>
-                </div>
-                
-                <div class="col-md-4 col-sm-6 redes d-flex flex-column  align-items-center justify-content-center column-gap-5 " data-aos="zoom-in-up">
-                    <h4>Redes</h4>
-                    <a href="#"><i class="bi bi-whatsapp"></i></a>
-                    <a href="#"><i class="bi bi-twitter"></i></a>
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                    <a href="#"><i class="bi bi-google"></i></a>
-                    <a href="#"><i class="bi bi-instagram"></i></a>
-                </div>
-                
-                <div class="copyright col-md-4 col-sm-12 text-center " data-aos="zoom-in-up">©Copyright Cruceros JF 2023</div>
-                
-            </div>
-        </div>   
-    </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!----------------- BOOTSTRAP ----------->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!----------------- AOS ----------->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
-</body>
+  </body>
 </html>

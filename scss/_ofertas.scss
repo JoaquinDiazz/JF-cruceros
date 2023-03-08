@@ -1,0 +1,105 @@
+.wrap-ofertas {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/OFERTAS/main.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    .hero-ofertas {
+        -webkit-animation: slide-in-elliptic-right-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-in-elliptic-right-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+        .parrafo1 {
+            letter-spacing: 3px;
+        }
+
+        p {
+            font-size: 22px;
+        }
+        h4 {
+            font-weight: bolder;
+            font-size: 50px;
+        }
+        .oferta {
+            border-radius: 5px;
+            border: 2px solid $darkPink;
+            background-color: $darkPink;
+            padding: 10px 20px;
+            width: 400px
+        }
+        .secondary-btn {
+            font-size: 18px;
+            letter-spacing: 1px;
+            transition: .5s;
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}
+
+.bg {
+    background-color: $pink;
+
+    .mejores-ofertas {
+
+        .titulo {
+            color: $darkPink;
+            font-size: 40px;
+            font-weight: bolder;
+        }
+        .card {
+            transition: .8s;
+            &:hover {
+                cursor: pointer;
+                transform: translateY(-10px);
+                box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+            }
+            .titulo {
+                color: white;
+                font-weight: bolder;
+                font-size: 35px;
+                transition: .5s;
+
+                &:hover {
+                    color: $darkPink;
+                }
+            }
+            .precio {
+                font-weight: bolder;
+                font-size: 25px;
+            }
+        }
+        .internet {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/OFERTAS/internet.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .suite {
+            @extend .internet;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/OFERTAS/camarote-suite.jpg");
+        }
+        .exterior {
+            @extend .internet;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/OFERTAS/camarote-exterior.jpg");
+        }
+    }
+}
+
+.crucero-corto {
+    display: flex;
+    align-items: center;
+
+    .titulo-crucero-corto {
+        color: $darkPink;
+        font-size: 40px;
+        font-weight: bolder;
+    }
+
+    button {
+        width: 300px;
+    }
+}

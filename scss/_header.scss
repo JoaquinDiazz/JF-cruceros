@@ -1,0 +1,74 @@
+.navbar {
+  background-color: white;
+
+  .navbar-brand {
+    -webkit-animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation-delay: 0.4s;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    img {
+      height: 50px;
+      width: 50px;
+    }
+    h1 {
+      font-size: 25px;
+      font-weight: bolder;
+
+      .main-color {
+        color: $darkPink;
+      }
+    }
+  }
+
+  .navbar-toggler {
+    color: $darkPink;
+  }
+  .navbar-collapse {
+    .navbar-nav {
+      .nav-item {
+        -webkit-animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1)
+          both;
+        animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+      }
+      @for $item from 1 through 5 {
+        .nav-item:nth-child(#{$item}) {
+          animation-delay: $item * 0.4s;
+        }
+      }
+    }
+
+    .buttons {
+      @extend .navbar-brand;
+    }
+  }
+}
+
+// -----------------KEYFRAME ANIMISTA--------------
+
+@-webkit-keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

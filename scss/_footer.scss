@@ -1,0 +1,85 @@
+.footer {
+  background-color: $pink;
+
+  .links {
+    h4 {
+      font-weight: bolder;
+      color: $darkPink;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      margin-bottom: 10px;
+    }
+  }
+
+  .contactos {
+    h4 {
+      font-weight: bolder;
+      color: $darkPink;
+    }
+
+    img {
+      height: 30px;
+      width: 30px;
+    }
+  }
+
+  .redes {
+    .red {
+      font-size: 20px;
+      color: white;
+      margin-bottom: 5px;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      display: grid;
+      place-content: center;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      transition: 0.5s;
+
+      &:hover {
+        transform: translateY(-10px);
+      }
+    }
+  }
+
+  .suscripcion {
+
+    h4 {
+      font-weight: bolder;
+      color: $darkPink;
+    }
+    input {
+      padding: 10px;
+      border: 2px solid $darkPink;
+      border-radius: 25px;
+      outline: none;
+      background-color: transparent;
+    }
+
+    button {
+      width: 100px;
+    }
+  }
+
+  .copyright {
+    border-top: 2px solid $darkPink;
+    padding-top: 20px;
+    text-align: center;
+  }
+}
+
+$redes: (
+  facebook: #3b5998,
+  twitter: #1da1f2,
+  instagram: #c32aa3,
+  whatsapp: #25d366,
+);
+
+@each $redsocial, $color in $redes {
+  .red-#{$redsocial} {
+    background-color: $color;
+  }
+}
