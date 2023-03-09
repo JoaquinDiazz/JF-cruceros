@@ -538,7 +538,7 @@ body::-webkit-scrollbar-thumb {
   color: #df928e; }
 
 .card {
-  transition: 0.5s; }
+  transition: .5s; }
   .card:hover {
     cursor: pointer;
     transform: translateY(-10px); }
