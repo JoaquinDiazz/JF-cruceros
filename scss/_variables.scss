@@ -1,8 +1,46 @@
-$lightBlue: #9381FF;
-$darkPink: #df928e;
-$orange: #F2A65A;
-$pink: #ffd6ff;
-$white: #e2eafc;
-$black: #051923;
+$colors: (
+    lightPinkk: #ffd6ff,
+    darkPink: #df928e
+);
 
+$redes: (
+  facebook: #3b5998,
+  twitter: #1da1f2,
+  instagram: #c32aa3,
+  whatsapp: #25d366,
+);
 
+@mixin bgImg($height, $bg-position, $bg-repeat, $bg-attachment, $bg-size) {
+  height: $height;
+  background-position: $bg-position;
+  background-repeat: $bg-repeat;
+  background-attachment: $bg-attachment;
+  background-size: $bg-size;
+}
+
+@mixin bgImgCard  {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin tittle($size, $weight, $color) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin flex-center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin tamaño($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+// @mixin hoverCard(
+
+// )

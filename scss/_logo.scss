@@ -1,18 +1,15 @@
 .logo {
-  display: flex;
-  align-items: center;
+  @include flex-center-center();
   column-gap: 10px;
 
   img {
-    height: 50px;
-    width: 50px;
+    @include tamaño(50px, 50px)
   }
   h1 {
-    font-size: 30px;
-    font-weight: bolder;
+    @include tittle(30px, bolder, black);
 
     span {
-      color: $darkPink;
+      color: map-get($colors , darkPink );
     }
   }
 }

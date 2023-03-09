@@ -1,4 +1,6 @@
 .navbar {
+
+  z-index: 1;
   background-color: white;
 
   .navbar-brand {
@@ -18,13 +20,13 @@
       font-weight: bolder;
 
       .main-color {
-        color: $darkPink;
+        color: map-get($colors , darkPink );
       }
     }
   }
 
   .navbar-toggler {
-    color: $darkPink;
+    color: map-get($colors , darkPink );
   }
   .navbar-collapse {
     .navbar-nav {

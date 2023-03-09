@@ -14,7 +14,7 @@
     />
     <title>Cruceros JF | Cruceros</title>
     <!----------------    ICONO    --------------->
-    <link rel="icon" href="../img/HOME/icon.png" />
+    <link rel="icon" href="../assets/icons/logo.svg" />
     <!----------------    BOOTSTRAP ICONS    --------------->
     <link
       rel="stylesheet"
@@ -33,12 +33,12 @@
     <link rel="stylesheet" href="../css/estilo.css" />
   </head>
   <body>
-    <div class="mainImg-cruceros">
+    <div class="hero-cruceros position-relative">
       <!----------------    NAVBAR    --------------->
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a href="" class="navbar-brand logo">
-            <img src="../img/HOME/icon.png" alt="Cruceros JF" />
+            <img src="../assets/icons/logo.svg" alt="Cruceros JF" />
             <h1>Cruceros <span>JF</span></h1>
           </a>
           <button
@@ -53,10 +53,10 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse d-flex justify-content-evenly"
+            class="collapse navbar-collapse"
             id="menu"
           >
-            <ul class="navbar-nav">
+            <ul class="navbar-nav mx-auto">
               <li class="nav-item">
                 <a href="../index.html" class="nav-link item">HOME</a>
               </li>
@@ -73,235 +73,177 @@
                 <a href="./contactos.html" class="nav-link item">CONTACTOS</a>
               </li>
             </ul>
-            <ul class="navbar-var">
-              <button class="secondary-btn">Ingresar</button>
-              <button class="main-btn">Registrarse</button>
-            </ul>
+            <form class="d-flex" role="search">
+              <button class="secondary-btn" type="submit">Ingresar</button>
+            </form>
           </div>
         </div>
       </nav>
 
       <!------------- HERO ---------------->
 
-      <div class="hero-cruceros container rounded p-2 my-4">
-        <div class="row">
-          <div class="col-lg-12 pb-3">
-            <h2>
-              Conoce los barcos más grandes <br />
-              del mundo
-            </h2>
-          </div>
-          <div class="col-lg-6 d-flex justify-content-center mb-3">
-            <img
-              class="rounded img-fluid float-start"
-              src="../img/CRUCEROS/hero.png"
-              alt=""
-            />
-          </div>
-          <div
-            class="body col-lg-6 d-flex flex-column row-gap-2 justify-content-evenly px-5"
-          >
-            <div class="d-flex align-content-center column-gap-3">
-              <img src="../img/CRUCEROS/medalla.png" alt="" />
-              <p>
-                Premiados año tras año por sus diseños, gastronomía y
-                alojamiento de primer nivel
-              </p>
-            </div>
-            <div class="d-flex align-content-center column-gap-3">
-              <img src="../img/CRUCEROS/aventura.png" alt="" />
-              <p>
-                Repletos de aventuras que sorprenderán a cualquier explorador.
-              </p>
-            </div>
-            <div class="d-flex align-content-center column-gap-3">
-              <img src="../img/CRUCEROS/billete-de-avion.png" alt="" />
-              <p>
-                Revisa nuestros viajes para el período 2023-2024, ya puedes
-                hacer reservas.
-              </p>
-            </div>
-          </div>
+    <div class="container">
+      <div class="row position-absolute top-50 start-50 translate-middle">
+        <div class="hero col-lg-6 d-flex flex-column text-white text-start">
+          <h2 class="fw-bolder">Subí a bordo de nuestros barcos</h2>
+          <p>Cada barco es un mundo.Cada uno tiene su propio estilo y todo lo que necesitas para ofrecerte unas vacaciones inolvidables. Subí a bordo y empezá a navegar por los restaurantes, teatros y camarotes de nuestra flota.</p>
         </div>
       </div>
     </div>
-
-    <!---------- PROXIMAMENTE EN LA FLOTA ------------------->
-
-    <div class="container-fluid">
-      <div class="row proximamente py-5 d-flex row-gap-4">
-        <div class="col-md-4">
-          <h4 class="titulo">Próximamente en la flota</h4>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img
-              src="../img/CRUCEROS/card1.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Zafiro</h5>
-              <p class="card-text">Capacidad: 8000 pasajeros</p>
-              <p class="card-text">Longitud: 350 metros</p>
-              <p class="card-text">Pisos: 12</p>
-              <button class="secondary-btn">Reservar</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img
-              src="../img/CRUCEROS/card2.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Tempestad</h5>
-              <p class="card-text">Capacidad: 7500 pasajeros</p>
-              <p class="card-text">Longitud: 300 metros</p>
-              <p class="card-text">Pisos: 15</p>
-              <button class="secondary-btn">Reservar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  </div>
 
     <!------------------- NUESTRA FLOTA -------------->
 
-    <div class="container nuestra-flota">
-      <div class="row my-5 d-flex row-gap-4">
-        <div class="col-md-12 mt-4">
-          <h4 class="titulo text-center">Nuestra flota</h4>
-        </div>
+    <div class="container my-4">
+      <div class="row d-flex row-gap-3" data-aos="fade-up">
         <div
-          class="col-lg-4 col-md-6 col-sm-12"
-          data-aos="zoom-out"
-          data-aos-easing="linear"
-          data-aos-duration="500"
+          class="crucero col-lg-6 d-flex flex-column row-gap-3 px-4 align-items-end justify-content-center"
         >
-          <div class="card">
+          <h4 class="nombre-crucero fw-bolder fs-1">Alba</h4>
+          <p class="text-end">
+            Nuestro buque insignia: representa el relax, la brisa que te despeina y las vistas al mar. Durante el día se podran divertir gracias al gran complejo deportivo, al enorme Acqua Park, pistas de bolos, el rocódromo, el centro fitness y el centro de bienestar, mientras por la noche no podran escoger entre los 14 restaurantes, discotecas privadas, el Ice bar, el White Hot Party de NCL y mucho mas.
+          <div class="d-flex column-gap-2 text-end">
+            <button class="main-btn"> Itinerario </button>
+            <button class="secondary-btn"> Reservar </button>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img
+            class="img-fluid"
+            src="../assets/images/card1.webp"
+            alt="Alba"
+            title="Alba"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="bg py-4">
+      <div class="container">
+        <div class="row d-flex row-gap-3" data-aos="fade-up">
+          <div class="col-lg-6">
             <img
-              src="../img/CRUCEROS/card3.jpg"
-              class="card-img-top"
-              alt="..."
+              class="img-fluid"
+              src="../assets/images/card2.webp"
+              alt="Toscana"
+              title="Toscana"
             />
-            <div class="card-body">
-              <h5 class="card-title">Perla Negra</h5>
-              <p class="card-text">Capacidad: 9000 pasajeros</p>
-              <p class="card-text">Longitud: 380 metros</p>
-              <p class="card-text">Pisos: 10</p>
-              <p class="card-text">
-                Valoración:<i class="bi bi-star-fill"></i
-                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                ><i class="bi bi-star-half"></i><i class="bi bi-star"></i>
-              </p>
-              <button class="secondary-btn">Reservar</button>
+          </div>
+          <div
+            class="crucero col-lg-6 d-flex flex-column row-gap-3 px-4 align-items-start justify-content-center"
+          >
+            <h4 class="nombre-crucero fw-bolder fs-1">Toscana</h4>
+            <p class="text-start">
+              Al arte de vivir el mar. Nació en 2021 y está inspirada en el estilo, el arte, la cultura y el sabor de una de las regiones italianas más famosas, la Toscana. Ven a conocer nuestro nuevo buque insignia. Los puntos fuertes son sin duda los más de 25 restaurantes, entre los cuales hay 3 locales nuevos dedicados a platos del mar, y los deslumbrantes espectáculos de Broadway como Rock of Ages, Burn the Floor y Cirque Dreams & Dinner Jungle Fantasy.
+            </p>
+            <div class="d-flex column-gap-2 text-end">
+              <button class="main-btn"> Itinerario </button>
+              <button class="secondary-btn"> Reservar </button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-4">
+      <div class="row d-flex row-gap-3" data-aos="fade-up">
+        <div
+          class="crucero col-lg-6 d-flex flex-column row-gap-3 px-4 align-items-end justify-content-center"
+        >
+          <h4 class="nombre-crucero fw-bolder fs-1">Ballarta</h4>
+          <p class="text-end">
+            A bordo de este pedazo de historia, de 345 metros de largo y 148.528 toneladas de peso, sus pasajeros podrán gozar de desenfrenadas noches en el casino, soñar con los ojos abiertos en el planetario o divertirse entre un partido de tenis y un simulador de golf: ¡todo eso siguiendo rigurosamente el dress code adecuado!
+          </p>
+          <div class="d-flex column-gap-2 text-end">
+            <button class="main-btn"> Itinerario </button>
+            <button class="secondary-btn"> Reservar </button>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img
+            class="img-fluid"
+            src="../assets/images/card3.webp"
+            alt="Alba"
+            title="Alba"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="bg py-4">
+      <div class="container">
+        <div class="row d-flex row-gap-3" data-aos="fade-up">
+          <div class="col-lg-6">
+            <img
+              class="img-fluid"
+              src="../assets/images/card4.webp"
+              alt="Toscana"
+              title="Toscana"
+            />
+          </div>
+          <div
+            class="crucero col-lg-6 d-flex flex-column row-gap-3 px-4 align-items-start justify-content-center"
+          >
+            <h4 class="nombre-crucero fw-bolder fs-1">Siete Mares</h4>
+            <p class="text-start">
+              Durante el día y la noche, tendrás mucho donde elegir: desde paseos al atardecer hasta espectáculos y actuaciones en el teatro con artistas internacionales. Subí a bordo de Los Sietes Mares.
+            </p>
+            <div class="d-flex column-gap-2 text-end">
+              <button class="main-btn"> Itinerario </button>
+              <button class="secondary-btn"> Reservar </button>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="container my-4">
+      <div class="row d-flex row-gap-3" data-aos="fade-up">
         <div
-          class="col-lg-4 col-md-6 col-sm-12"
-          data-aos="zoom-out"
-          data-aos-easing="linear"
-          data-aos-duration="500"
+          class="crucero col-lg-6 d-flex flex-column row-gap-3 px-4 align-items-end justify-content-center"
         >
-          <div class="card">
-            <img
-              src="../img/CRUCEROS/card4.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Alba</h5>
-              <p class="card-text">Capacidad: 6500 pasajeros</p>
-              <p class="card-text">Longitud: 350 metros</p>
-              <p class="card-text">Pisos: 15</p>
-              <p class="card-text">
-                Valoración: <i class="bi bi-star-fill"></i
-                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                ><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
-              </p>
-              <button class="secondary-btn">Reservar</button>
-            </div>
+          <h4 class="nombre-crucero fw-bolder fs-1">La Scaloneta</h4>
+          <p class="text-end">
+            Innovación, diseño y un conjunto de ambientes y actvidades a bordo claramente anticonvencionales hacen única la experiencia a bordo de La Scaloneta ¡de 167.800 toneladas, 348 metros de largo y capacidad para 4.180 personas!
+          </p>
+          <div class="d-flex column-gap-2 text-end">
+            <button class="main-btn"> Itinerario </button>
+            <button class="secondary-btn"> Reservar </button>
           </div>
         </div>
-        <div
-          class="col-lg-4 col-md-6 col-sm-12"
-          data-aos="zoom-out"
-          data-aos-easing="linear"
-          data-aos-duration="500"
-        >
-          <div class="card">
-            <img
-              src="../img/CRUCEROS/card5.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Infinity</h5>
-              <p class="card-text">Capacidad: 8200 pasajeros</p>
-              <p class="card-text">Longitud: 400 metros</p>
-              <p class="card-text">Pisos: 13</p>
-              <p class="card-text">
-                Valoración: <i class="bi bi-star-fill"></i
-                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                ><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
-              </p>
-              <button class="secondary-btn">Reservar</button>
-            </div>
-          </div>
+        <div class="col-lg-6">
+          <img
+            class="img-fluid"
+            src="../assets/images/card5.webp"
+            alt="Alba"
+            title="Alba"
+          />
         </div>
-        <div
-          class="col-lg-4 col-md-6 col-sm-12"
-          data-aos="zoom-out"
-          data-aos-easing="linear"
-          data-aos-duration="500"
-        >
-          <div class="card">
+      </div>
+    </div>
+
+    <div class="bg py-4">
+      <div class="container">
+        <div class="row d-flex row-gap-3" data-aos="fade-up">
+          <div class="col-lg-6">
             <img
-              src="../img/CRUCEROS/card6.jpg"
-              class="card-img-top"
-              alt="..."
+              class="img-fluid"
+              src="../assets/images/card6.webp"
+              alt="Toscana"
+              title="Toscana"
             />
-            <div class="card-body">
-              <h5 class="card-title">Ballarta</h5>
-              <p class="card-text">Capacidad: 6200 pasajeros</p>
-              <p class="card-text">Longitud: 320 metros</p>
-              <p class="card-text">Pisos: 12</p>
-              <p class="card-text">
-                Valoración: <i class="bi bi-star-fill"></i
-                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                ><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
-              </p>
-              <button class="secondary-btn">Reservar</button>
-            </div>
           </div>
-        </div>
-        <div
-          class="col-lg-4 col-md-6 col-sm-12"
-          data-aos="zoom-out"
-          data-aos-easing="linear"
-          data-aos-duration="500"
-        >
-          <div class="card">
-            <img
-              src="../img/CRUCEROS/card7.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Siete Mares</h5>
-              <p class="card-text">Capacidad: 7200 pasajeros</p>
-              <p class="card-text">Longitud: 370 metros</p>
-              <p class="card-text">Pisos: 14</p>
-              <p class="card-text">
-                Valoración: <i class="bi bi-star-fill"></i
-                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                ><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
-              </p>
-              <button class="secondary-btn">Reservar</button>
+          <div
+            class="crucero col-lg-6 d-flex flex-column row-gap-3 px-4 align-items-start justify-content-center"
+          >
+            <h4 class="nombre-crucero fw-bolder fs-1">Aguamarina</h4>
+            <p class="text-start">
+              La vida a bordo del Aguamarina se desarrolla en auténticos barrios residenciales con atracciones para todos los gustos: se podran deslizar por la Zip Line suspendidos sobre el mar, o cabalgar las olas con el simulador de surf, tomar un café de Starbucks o ir de compras en las numerosas tiendas, asistir a un espectáculo teatral, jugar a golf, a basket, hacer escalada libre y mucho más.
+            </p>
+            <div class="d-flex column-gap-2 text-end">
+              <button class="main-btn"> Itinerario </button>
+              <button class="secondary-btn"> Reservar </button>
             </div>
           </div>
         </div>
@@ -313,12 +255,13 @@
     <div class="footer container-fluid p-5">
       <div
         class="row d-flex align-items-start justify-content-between row-gap-5 align-content-center"
+        data-aos="fade-up"
       >
         <div
           class="redes col-lg-3 col-md-4 col-sm-6 d-flex flex-column row-gap-2"
         >
           <div class="logo d-flex column-gap-3">
-            <img src="../img/HOME/icon.png" alt="" />
+            <img src="../assets/icons/logo.svg" alt="" />
             <h1>Cruceros <span>JF</span></h1>
           </div>
           <div class="d-flex column-gap-3">
@@ -337,7 +280,7 @@
           </div>
         </div>
         <div class="links col-lg-3 col-md-4 col-sm-6 d-flex flex-column">
-          <h4>Links</h4>
+          <h3>Links</h3>
           <div class="d-inline-block mb-2">
             <a href="../index.html" class="item">Home</a>
           </div>
@@ -355,28 +298,30 @@
           </div>
         </div>
         <div class="contactos col-lg-3 col-md-4 col-sm-12 d-flex flex-column">
-          <h4>Contactos</h4>
-          <div class="d-flex column-gap-3">
-            <img src="../img/HOME/telefono.png" alt="" />
-            <p>3834908750</p>
+          <h3>Contactos</h3>
+          <div class="d-flex column-gap-2 align-content-center">
+            <i class="bi bi-envelope"></i>
+            <p>crucerosJF@gmail.com</p>
           </div>
-          <div class="d-flex column-gap-3">
-            <img src="../img/HOME/correo-electronico.png" alt="" />
-            <p>lorem@gmail.com</p>
+          <div class="d-flex column-gap-2 align-content-center">
+            <i class="bi bi-telephone"></i>
+            <p>+ 26 45 89 235</p>
           </div>
-          <div class="d-flex column-gap-3">
-            <img src="../img/HOME/alfiler.png" alt="" />
-            <p>Calle falsa 123</p>
+          <div class="d-flex column-gap-2 align-content-center">
+            <i class="bi bi-geo-alt"></i>
+            <p>Calle 67, Piso 4</p>
           </div>
-          <div class="d-flex column-gap-3">
-            <img src="../img/HOME/abierto.png" alt="" />
-            <p>8:00am a 19:00pm</p>
+          <div class="d-flex column-gap-2 align-items-center">
+            <i class="bi bi-clock"></i>
+            <div>
+              <p>Lunes-Viernes <br> 8.00 - 19.00</p> 
+            </div>
           </div>
         </div>
         <div
           class="suscripcion col-lg-3 col-md-12 col-sm-12 mb-5 d-flex flex-column"
         >
-          <h4>Suscribase para recibir las ultimas noticias</h4>
+          <h3>Suscribase para recibir las ultimas noticias</h3>
           <input type="email" placeholder="Ingrese su gmail" />
           <button class="main-btn mt-3">Enviar</button>
         </div>

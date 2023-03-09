@@ -1,18 +1,8 @@
 body::-webkit-scrollbar {
-    width: 1em;
+  width: 1em;
 }
-
-// body::-webkit-scrollbar-track {
-//     background: linear-gradient(0deg, rgba(226,161,157,1) 0%, rgba(233,184,135,1) 67%);
-//     border-radius: 100vw;
-//     margin-block: 5px;
-// }
-
 body::-webkit-scrollbar-thumb {
-    // background: rgb(226,114,108);
-    // background: linear-gradient(0deg, rgba(226,114,108,1) 0%, rgba(242,166,90,1) 67%);
-    border: 3px solid white;
-    background: $darkPink;
-    border-radius: 100vw;
-    border: linear-gradient(0deg, rgba(226,161,157,1) 0%, rgba(233,184,135,1) 67%);;
+  border: 3px solid white;
+  background: map-get($colors , darkPink );
+  border-radius: 100vw;
 }

@@ -1,74 +1,54 @@
 .hero-cruceros {
-    background: rgb(255,214,255);
-    background: linear-gradient(90deg, rgba(255,214,255,1) 0%, rgba(208,167,165,1) 22%, rgba(223,146,142,1) 57%, rgba(176,108,105,1) 92%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../assets/images/hero-cruceros.webp");
+  @include bgImg(100vh, center bottom, no-repeat, fixed, cover);
 
+  .hero {
     h2 {
-        font-size: 35px;
-        font-weight: bolder;
-        color: white;
-        text-align: center;
+      font-size: 60px;
     }
+  }
+}
 
-    img {
-        height: 400px;
-    }
-
-    .body {
-        img {
-            height: 50px;
-        }
-        p {
-            font-size: 20px;
-            color: white;
-        }
-    }
+.crucero {
+  .nombre-crucero {
+    border-bottom: 10px solid map-get($colors, darkPink);
+    font-size: 50px;
+  }
 }
 
 .proximamente {
-    background-color: $pink;
+  background-color: map-get($colors, lightPinkk);
 
-    .titulo-proximamente {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+  .titulo-proximamente {
+    @include flex-center-center();
 
-        .titulo {
-            font-size: 50px;
-            color: $darkPink;
-            font-weight: bolder;
-        }
+    .titulo {
+      @include tittle(50px, bolder, map-get($colors, darkPink));
     }
-
-    
+  }
 }
 
-
 .titulo {
-    font-size: 40px;
-     color: $darkPink;
-     font-weight: bolder;
+  @include tittle(40px, bolder, map-get($colors, darkPink));
 }
 
 .card {
-    transition: .5s;
+  transition: 0.5s;
 
-    &:hover {
-        cursor: pointer;
-        transform: translateY(-10px);
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+  }
+
+  .card-body {
+    .card-title {
+      @include tittle(30px, bolder, map-get($colors, darkPink));
+      text-align: center;
     }
 
-
-    .card-body{
-        .card-title {
-            font-size: 30px;
-            color: $darkPink;
-            font-weight: bolder;
-            text-align: center;
-        }
-    
-        i {
-            color: $darkPink;
-            font-size: 20px;
-        }
+    i {
+      @include tittle(20px, normal, map-get($colors, darkPink));
     }
+  }
 }

@@ -1,40 +1,27 @@
 // --------------HERO-----------
 .mainImg-home {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../img/HOME/main3.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../assets/images/hero-home.webp);
+    @include bgImg (100vh, center, no-repeat, fixed, cover);
 }
 .hero-home {
-
   .titulo-main {
-    font-size: 70px;
-    transition: 0.5s;
-
-    &:hover {
-      -webkit-text-stroke: 2px white;
-      color: transparent;
-      cursor: pointer;
-    }
+    @include tittle(70px, bolder, white)
   }
 }
 
 // -------------- PORQUE NOSOTROS---------------
 .nosotros {
-  display: flex;
-  align-items: center;
+  @include flex-center-center();
 
   .titulo-nosotros {
-    h4 {
-      border-bottom: 3px solid $darkPink;
+    h3 {
+      border-bottom: 3px solid map-get($colors , darkPink );
       padding-bottom: 10px;
-      font-size: 30px;
+      @include tittle(30px, bolder, black);
 
       span {
-        color: $darkPink;
+        color: map-get($colors , darkPink );
       }
     }
   }
@@ -43,7 +30,7 @@
     height: 250px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: 0.5s;
-    background-color: $darkPink;
+    background-color: map-get($colors , darkPink );
     border: none;
 
     &:hover {
@@ -54,14 +41,13 @@
     }
 
     .card-title-nosotros {
-      color: black;
+      @include tittle(25px, bolder, black);
       margin-top: 10px;
       text-align: center;
     }
 
-    .ajuste-img {
-      height: 70px;
-      width: 70px;
+    .card-nosotros-img {
+      @include tamaño(70px, 70px)
     }
   }
 }
@@ -69,16 +55,14 @@
 // ---------------NUEVOS DESTINOS-------------
 
 .nuevos-destinos {
-  height: 400px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../img/HOME/nuevosDestinos.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    url(../assets/images/nuevosDestinos.webp);
+  @include bgImg(400px, center, no-repeat, fixed, cover);
+  @include flex-center-center();
+  
+  h3 {
+    @include tittle(30px, bolder, white);
+  }
 }
 
 // --------------  OPINION CLIENTES ---------------
@@ -87,8 +71,7 @@
   background-color: #df928e;
 
   .card {
-    height: 300px;
-    width: 400px;
+    @include tamaño(300px, 400px);
     display: flex;
     flex-direction: column;
     row-gap: 20px;
@@ -102,12 +85,9 @@
 
     .texto {
       .comillas {
-        height: 70px;
-        width: 70px;
-        color: #df928e;
-        font-size: 70px;
-        display: flex;
-        align-items: center;
+        @include tamaño(70px, 70px);
+        @include tittle(70px, normal, map-get($colors , darkPink ));
+        @include flex-center-center();
       }
     }
 
@@ -117,13 +97,11 @@
 
       .text {
         .nombre {
-          font-weight: bolder;
-          font-size: 20px;
+          @include tittle(20px, bolder, black)
         }
 
         .estrellas {
-          color: #df928e;
-          font-size: 20px;
+          @include tittle(20px, normal,  map-get($colors , darkPink ));
 
           span {
             color: black;
@@ -133,8 +111,7 @@
       }
 
       img {
-        height: 90px;
-        width: 90px;
+        @include tamaño(90px, 90px)
       }
     }
   }

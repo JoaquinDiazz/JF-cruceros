@@ -3,7 +3,7 @@
 
   &::after {
     content: "";
-    background-color: $darkPink;
+    background-color: map-get($colors , darkPink );
     height: 3px;
     width: 0;
     position: absolute;

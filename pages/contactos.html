@@ -12,9 +12,9 @@
       name="keywords"
       content="Cruceros, Viajes, Turismo, Ofertas, Vacaciones, Argentina, Promociones"
     />
-    <title>Cruceros JF</title>
+    <title>Cruceros JF | Contactos</title>
     <!----------------- ICONO ----------->
-    <link rel="icon" href="../img/HOME/icon.png" />
+    <link rel="icon" href="../assets/icons/logo.svg" />
     <!----------------- BOOTSTRAP ICONS----------->
     <link
       rel="stylesheet"
@@ -33,11 +33,10 @@
     <link rel="stylesheet" href="../css/estilo.css" />
   </head>
   <bodys>
-    <div class="mainImg-contactos position-relative">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a href="" class="navbar-brand logo">
-            <img src="../img/HOME/icon.png" alt="" />
+            <img src="../assets/icons/logo.svg" alt="" />
             <h1>Cruceros <span>JF</span></h1>
           </a>
           <button
@@ -52,10 +51,10 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse d-flex justify-content-evenly"
+            class="collapse navbar-collapse"
             id="menu"
           >
-            <ul class="navbar-nav">
+            <ul class="navbar-nav mx-auto">
               <li class="nav-item">
                 <a href="../index.html" class="nav-link item">HOME</a>
               </li>
@@ -72,62 +71,62 @@
                 <a href="./contactos.html" class="nav-link item">CONTACTOS</a>
               </li>
             </ul>
-            <ul class="navbar-var navbar-btn">
-              <button class="secondary-btn">Ingresar</button>
-              <button class="main-btn">Registrarse</button>
-            </ul>
+            <form class="d-flex" role="search">
+              <button class="secondary-btn" type="submit">Ingresar</button>
+            </form>
           </div>
         </div>
       </nav>
       <!------------- CONTACTANOS ------------->
-      <div class="padre container position-absolute top-50 start-50 translate-middle ">
-        <div class="row text-white row-gap-5 scale-in-bottom">
-          <div class="contactanos col-md-8 p-5">
-            <h4 class="fw-bolder fs-3 pb-2 mb-3">Contactanos</h4>
+      <div class="bg">
+      <div class="padre container">
+        <div class="row text-white row-gap-5 scale-in-bottom py-5">
+          <div class="contactanos col-lg-8 col-md-12 p-5">
+            <h3 class="fw-bolder fs-3 pb-2 mb-3">Contactanos</h3>
             <form>
 
               <div class="row">
-                <div class="col-6">
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <label for="exampleInputPassword1" class="form-label">Nombre y apellido</label>
                   <input type="password" class="form-control" id="exampleInputPassword1">
                 </div>
-                <div class="col-6">
-                  <label for="nombre" class="form-label">Nombre y apellido</label>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <label for="nombre" class="form-label">Telefono</label>
                   <input type="text" class="form-control" id="nombre">
                 </div>
-                <div class="col-6">
-                  <label for="nombre" class="form-label">Nombre y apellido</label>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <label for="nombre" class="form-label">Email</label>
                   <input type="text" class="form-control" id="nombre">
                 </div>
-                <div class="col-6">
-                  <label for="nombre" class="form-label">Nombre y apellido</label>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <label for="nombre" class="form-label">Asunto</label>
                   <input type="text" class="form-control" id="nombre">
                 </div>
                 <div class="col-12">
-                  <label for="floatingTextarea">Comments</label>
-                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                  <label for="floatingTextarea">Comentario</label>
+                  <textarea class="form-control" id="floatingTextarea"></textarea>
                 </div>
               </div>
               
-              <button class="secondary-btn pt-3" type="submit">Enviar</button>
+              <button class="secondary-btn mt-2" type="submit">Enviar</button>
             </form>
           </div>
       <!------------- BUSCANOS ------------->
-          <div class="buscanos col-md-4 p-5 text-white">
-            <h4 class="fs-3 fw-bolder pb-2 mb-3 border-bottom ">Buscanos</h4>
-            <div class="d-flex column-gap-3 align-content-center pb-2">
+          <div class="buscanos col-lg-4 col-md-12 p-5 text-white">
+            <h3 class="fs-3 fw-bolder pb-2 mb-3 border-bottom ">Buscanos</h2>
+            <div class="d-flex column-gap-1 align-content-center pb-2">
               <i class="bi bi-envelope"></i>
               <p>crucerosJF@gmail.com</p>
             </div>
-            <div class="d-flex column-gap-3 align-content-center pb-2">
+            <div class="d-flex column-gap-1 align-content-center pb-2">
               <i class="bi bi-telephone"></i>
               <p>+ 26 45 89 235</p>
             </div>
-            <div class="d-flex column-gap-3 align-content-center pb-2">
+            <div class="d-flex column-gap-1 align-content-center pb-2">
               <i class="bi bi-geo-alt"></i>
               <p>Calle 67, Piso 4</p>
             </div>
-            <div class="d-flex column-gap-3 align-items-center pb-2">
+            <div class="d-flex column-gap-1 align-items-center pb-2">
               <i class="bi bi-clock"></i>
               <div>
                 <p>Lunes-Viernes <br> 8.00 - 19.00</p> 
@@ -143,7 +142,6 @@
         </div>
       </div>
     </div>
-
     <!----------------  FOOTER  --------------->
     <div class="footer container-fluid p-5">
       <div
@@ -154,7 +152,7 @@
           class="redes col-lg-3 col-md-4 col-sm-6 d-flex flex-column row-gap-2"
         >
           <div class="logo d-flex column-gap-3">
-            <img src="../img/HOME/icon.png" alt="" />
+            <img src="../assets/icons/logo.svg" alt="" />
             <h1>Cruceros <span>JF</span></h1>
           </div>
           <div class="d-flex column-gap-3">
@@ -173,7 +171,7 @@
           </div>
         </div>
         <div class="links col-lg-3 col-md-4 col-sm-6 d-flex flex-column">
-          <h4>Links</h4>
+          <h3>Links</h3>
           <div class="d-inline-block mb-2">
             <a href="../index.html" class="item">Home</a>
           </div>
@@ -191,28 +189,30 @@
           </div>
         </div>
         <div class="contactos col-lg-3 col-md-4 col-sm-12 d-flex flex-column">
-          <h4>Contactos</h4>
-          <div class="d-flex column-gap-3">
-            <img src="../img/HOME/telefono.png" alt="" />
-            <p>3834908750</p>
+          <h3>Contactos</h3>
+          <div class="d-flex column-gap-2 align-content-center">
+            <i class="bi bi-envelope"></i>
+            <p>crucerosJF@gmail.com</p>
           </div>
-          <div class="d-flex column-gap-3">
-            <img src="../img/HOME/correo-electronico.png" alt="" />
-            <p>lorem@gmail.com</p>
+          <div class="d-flex column-gap-2 align-content-center">
+            <i class="bi bi-telephone"></i>
+            <p>+ 26 45 89 235</p>
           </div>
-          <div class="d-flex column-gap-3">
-            <img src="../img/HOME/alfiler.png" alt="" />
-            <p>Calle falsa 123</p>
+          <div class="d-flex column-gap-2 align-content-center">
+            <i class="bi bi-geo-alt"></i>
+            <p>Calle 67, Piso 4</p>
           </div>
-          <div class="d-flex column-gap-3">
-            <img src="../img/HOME/abierto.png" alt="" />
-            <p>8:00am a 19:00pm</p>
+          <div class="d-flex column-gap-2 align-items-center">
+            <i class="bi bi-clock"></i>
+            <div>
+              <p>Lunes-Viernes <br> 8.00 - 19.00</p> 
+            </div>
           </div>
         </div>
         <div
           class="suscripcion col-lg-3 col-md-12 col-sm-12 mb-5 d-flex flex-column"
         >
-          <h4>Suscribase para recibir las ultimas noticias</h4>
+          <h3>Suscribase para recibir las ultimas noticias</h3>
           <input type="email" placeholder="Ingrese su gmail" />
           <button class="main-btn mt-3">Enviar</button>
         </div>

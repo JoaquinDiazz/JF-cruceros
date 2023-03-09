@@ -1,10 +1,11 @@
 .footer {
-  background-color: $pink;
+  background-color: map-get($colors , lightPinkk );
+  border-top: 2px solid white;
 
   .links {
-    h4 {
+    h3 {
       font-weight: bolder;
-      color: $darkPink;
+      color: map-get($colors , darkPink );
     }
     a {
       text-decoration: none;
@@ -14,14 +15,14 @@
   }
 
   .contactos {
-    h4 {
+    h3 {
       font-weight: bolder;
-      color: $darkPink;
+      color: map-get($colors , darkPink );
     }
 
-    img {
-      height: 30px;
-      width: 30px;
+    i {
+      font-size: 20px;
+      color: map-get($colors , darkPink );
     }
   }
 
@@ -47,13 +48,13 @@
 
   .suscripcion {
 
-    h4 {
+    h3 {
       font-weight: bolder;
-      color: $darkPink;
+      color: map-get($colors , darkPink );
     }
     input {
       padding: 10px;
-      border: 2px solid $darkPink;
+      border: 2px solid map-get($colors , darkPink );
       border-radius: 25px;
       outline: none;
       background-color: transparent;
@@ -65,18 +66,11 @@
   }
 
   .copyright {
-    border-top: 2px solid $darkPink;
+    border-top: 2px solid map-get($colors , darkPink );
     padding-top: 20px;
     text-align: center;
   }
 }
-
-$redes: (
-  facebook: #3b5998,
-  twitter: #1da1f2,
-  instagram: #c32aa3,
-  whatsapp: #25d366,
-);
 
 @each $redsocial, $color in $redes {
   .red-#{$redsocial} {

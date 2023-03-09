@@ -1,38 +1,57 @@
+.bg {
+  background-color: map-get($colors , lightPinkk );
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 
-.mainImg-contactos {
-    background-color: $pink;
-    height: 110vh;
-    position: relative;
+  .contactanos {
+    background-color: white;
+    h3 {
+      color: map-get($colors , darkPink );
+      border-bottom: 1px solid map-get($colors , darkPink );
+    }
+
+    form {
+      label {
+        color: map-get($colors , darkPink );
+      }
+      input,
+      textarea {
+        border: 1px solid map-get($colors , darkPink );
+        outline: none;
+      }
+      
+    }
+  }
+
+  .buscanos {
+    background-color: map-get($colors , darkPink );
+
+    h4 {
+      color: white;
+    }
+
+    i,
+    .redes {
+      font-size: 20px;
+    }
+  }
 }
 
-.padre {
-    background-color: white;
+// ANIMISTA
 
-  
-    
-    .contactanos {
-        h4 {
-            color: $darkPink;
-            border-bottom: 1px solid $darkPink ;
-        }
-
-        form {
-            label {
-                color: $darkPink;
-            }
-        }
-    }
-
-    .buscanos {
-        background-color: $darkPink;
-
-        h4 {
-            color: white;
-
-        }
-
-        i, .redes {
-            font-size: 20px;
-        }
-    }
+ @-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

@@ -14,7 +14,7 @@
     />
     <title>Cruceros JF | Ofertas</title>
     <!----------------- ICONO ----------->
-    <link rel="icon" href="../img/HOME/icon.png" />
+    <link rel="icon" href="../assets/icons/logo.svg" />
     <!----------------- BOOTSTRAP ICONS----------->
     <link
       rel="stylesheet"
@@ -38,7 +38,7 @@
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a href="" class="navbar-brand logo">
-            <img src="../img/HOME/icon.png" alt="" />
+            <img src="../assets/icons/logo.svg" alt="" />
             <h1>Cruceros <span>JF</span></h1>
           </a>
           <button
@@ -53,10 +53,10 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse d-flex justify-content-evenly"
+            class="collapse navbar-collapse"
             id="menu"
           >
-            <ul class="navbar-nav">
+            <ul class="navbar-nav mx-auto">
               <li class="nav-item">
                 <a href="../index.html" class="nav-link item">HOME</a>
               </li>
@@ -73,10 +73,9 @@
                 <a href="./contactos.html" class="nav-link item">CONTACTOS</a>
               </li>
             </ul>
-            <ul class="navbar-var navbar-btn">
-              <button class="secondary-btn">Ingresar</button>
-              <button class="main-btn">Registrarse</button>
-            </ul>
+            <form class="d-flex" role="search">
+              <button class="secondary-btn" type="submit">Ingresar</button>
+            </form>
           </div>
         </div>
       </nav>
@@ -88,7 +87,7 @@
         <div class="row">
           <div class="hero-ofertas col-lg-8">
             <p class="parrafo1">Este es tu año para conocer el mundo</p>
-            <h4>Ahorra hasta $50.000</h4>
+            <h2>Ahorra hasta $50.000</h2>
             <p>+ 30% de descuento</p>
             <p class="oferta">Oferta termina el 27 de Marzo</p>
             <button class="secondary-btn">Reservar ya</button>
@@ -103,7 +102,7 @@
       <div class="container mejores-ofertas">
         <div class="row py-5 d-flex row-gap-4">
           <div class="col-lg-12 text-center" data-aos="fade-up">
-            <h4 class="titulo">LAS MEJORES OFERTAS DE CRUCEROS</h4>
+            <h3 class="titulo">LAS MEJORES OFERTAS DE CRUCEROS</h3>
             <p class="parrafo px-5">
               Descubre más destinos soñados con estas ofertas de cruceros
               inmejorables. Si tus planes cambian, no te preocupes. Estarás
@@ -146,10 +145,9 @@
     <!----------------------- CRUCERO CORTO ---------------->
 
     <div class="container my-5">
-      <div class="row crucero-corto d-flex row-gap-3">
+      <div class="row crucero-corto d-flex row-gap-3" data-aos="fade-up">
         <div
           class="col-lg-6 d-flex flex-column row-gap-3"
-          data-aos="fade-right"
         >
           <h4 class="titulo-crucero-corto">DISFRUTA UN CRUCERO CORTO</h4>
           <p>
@@ -161,11 +159,12 @@
           </p>
           <button class="main-btn">Reservar ya</button>
         </div>
-        <div class="col-lg-6" data-aos="fade-left">
+        <div class="col-lg-6">
           <img
             class="img-fluid rounded"
-            src="../img/OFERTAS/crucero-corto.jpg"
-            alt=""
+            src="../assets/images/crucero-corto.webp"
+            alt="Cruceros cortos"
+            title="Cruceros cortos"
           />
         </div>
       </div>
@@ -182,7 +181,7 @@
           class="redes col-lg-3 col-md-4 col-sm-6 d-flex flex-column row-gap-2"
         >
           <div class="logo d-flex column-gap-3">
-            <img src="../img/HOME/icon.png" alt="" />
+            <img src="../assets/icons/logo.svg" alt="" />
             <h1>Cruceros <span>JF</span></h1>
           </div>
           <div class="d-flex column-gap-3">
@@ -201,7 +200,7 @@
           </div>
         </div>
         <div class="links col-lg-3 col-md-4 col-sm-6 d-flex flex-column">
-          <h4>Links</h4>
+          <h3>Links</h3>
           <div class="d-inline-block mb-2">
             <a href="../index.html" class="item">Home</a>
           </div>
@@ -219,28 +218,30 @@
           </div>
         </div>
         <div class="contactos col-lg-3 col-md-4 col-sm-12 d-flex flex-column">
-          <h4>Contactos</h4>
-          <div class="d-flex column-gap-3">
-            <img src="../img/HOME/telefono.png" alt="" />
-            <p>3834908750</p>
+          <h3>Contactos</h3>
+          <div class="d-flex column-gap-2 align-content-center">
+            <i class="bi bi-envelope"></i>
+            <p>crucerosJF@gmail.com</p>
           </div>
-          <div class="d-flex column-gap-3">
-            <img src="../img/HOME/correo-electronico.png" alt="" />
-            <p>lorem@gmail.com</p>
+          <div class="d-flex column-gap-2 align-content-center">
+            <i class="bi bi-telephone"></i>
+            <p>+ 26 45 89 235</p>
           </div>
-          <div class="d-flex column-gap-3">
-            <img src="../img/HOME/alfiler.png" alt="" />
-            <p>Calle falsa 123</p>
+          <div class="d-flex column-gap-2 align-content-center">
+            <i class="bi bi-geo-alt"></i>
+            <p>Calle 67, Piso 4</p>
           </div>
-          <div class="d-flex column-gap-3">
-            <img src="../img/HOME/abierto.png" alt="" />
-            <p>8:00am a 19:00pm</p>
+          <div class="d-flex column-gap-2 align-items-center">
+            <i class="bi bi-clock"></i>
+            <div>
+              <p>Lunes-Viernes <br> 8.00 - 19.00</p> 
+            </div>
           </div>
         </div>
         <div
           class="suscripcion col-lg-3 col-md-12 col-sm-12 mb-5 d-flex flex-column"
         >
-          <h4>Suscribase para recibir las ultimas noticias</h4>
+          <h3>Suscribase para recibir las ultimas noticias</h3>
           <input type="email" placeholder="Ingrese su gmail" />
           <button class="main-btn mt-3">Enviar</button>
         </div>

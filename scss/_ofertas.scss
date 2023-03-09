@@ -1,10 +1,6 @@
 .wrap-ofertas {
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/OFERTAS/main.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/images/hero-ofertas.webp");
+    @include bgImg (100vh, center, no-repeat, fixed, cover);
 
     .hero-ofertas {
         -webkit-animation: slide-in-elliptic-right-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -17,14 +13,13 @@
         p {
             font-size: 22px;
         }
-        h4 {
-            font-weight: bolder;
-            font-size: 50px;
+        h2 {
+            @include tittle(50px, bolder, white)
         }
         .oferta {
             border-radius: 5px;
-            border: 2px solid $darkPink;
-            background-color: $darkPink;
+            border: 2px solid map-get($colors , darkPink );
+            background-color: map-get($colors , darkPink );
             padding: 10px 20px;
             width: 400px
         }
@@ -41,14 +36,12 @@
 }
 
 .bg {
-    background-color: $pink;
+    background-color: map-get($colors , lightPinkk );
 
     .mejores-ofertas {
 
         .titulo {
-            color: $darkPink;
-            font-size: 40px;
-            font-weight: bolder;
+            @include tittle(40px, bolder,  map-get($colors , darkPink ))
         }
         .card {
             transition: .8s;
@@ -58,45 +51,37 @@
                 box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
             }
             .titulo {
-                color: white;
-                font-weight: bolder;
-                font-size: 35px;
+                @include tittle(35px, bolder,  white);
                 transition: .5s;
 
                 &:hover {
-                    color: $darkPink;
+                    color: map-get($colors , darkPink );
                 }
             }
             .precio {
-                font-weight: bolder;
-                font-size: 25px;
+                @include tittle(25px, bolder,  white);
             }
         }
         .internet {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/OFERTAS/internet.jpg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/images/internet.webp");
+            @include bgImgCard();
         }
         .suite {
             @extend .internet;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/OFERTAS/camarote-suite.jpg");
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/images/camarote-suite.webp");
         }
         .exterior {
             @extend .internet;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/OFERTAS/camarote-exterior.jpg");
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/images/camarote-exterior.webp");
         }
     }
 }
 
 .crucero-corto {
-    display: flex;
-    align-items: center;
+    @include flex-center-center();
 
     .titulo-crucero-corto {
-        color: $darkPink;
-        font-size: 40px;
-        font-weight: bolder;
+        @include tittle(40px, bolder,  map-get($colors , darkPink ));
     }
 
     button {

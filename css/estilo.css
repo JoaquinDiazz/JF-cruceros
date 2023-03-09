@@ -6,6 +6,7 @@
   font-family: 'Poppins', sans-serif; }
 
 .navbar {
+  z-index: 1;
   background-color: white; }
   .navbar .navbar-brand, .navbar .navbar-collapse .buttons {
     -webkit-animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -59,29 +60,29 @@
     opacity: 1; } }
 
 .mainImg-home {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/HOME/main3.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/images/hero-home.webp);
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
-  height: 100vh; }
+  background-size: cover; }
 
 .hero-home .titulo-main {
   font-size: 70px;
-  transition: 0.5s; }
-  .hero-home .titulo-main:hover {
-    -webkit-text-stroke: 2px white;
-    color: transparent;
-    cursor: pointer; }
+  font-weight: bolder;
+  color: white; }
 
 .nosotros {
   display: flex;
-  align-items: center; }
-  .nosotros .titulo-nosotros h4 {
+  align-items: center;
+  justify-content: center; }
+  .nosotros .titulo-nosotros h3 {
     border-bottom: 3px solid #df928e;
     padding-bottom: 10px;
-    font-size: 30px; }
-    .nosotros .titulo-nosotros h4 span {
+    font-size: 30px;
+    font-weight: bolder;
+    color: black; }
+    .nosotros .titulo-nosotros h3 span {
       color: #df928e; }
   .nosotros .card-nosotros {
     height: 250px;
@@ -94,16 +95,18 @@
       box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
       transform: translateY(-10px); }
     .nosotros .card-nosotros .card-title-nosotros {
+      font-size: 25px;
+      font-weight: bolder;
       color: black;
       margin-top: 10px;
       text-align: center; }
-    .nosotros .card-nosotros .ajuste-img {
+    .nosotros .card-nosotros .card-nosotros-img {
       height: 70px;
       width: 70px; }
 
 .nuevos-destinos {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/images/nuevosDestinos.webp);
   height: 400px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/HOME/nuevosDestinos.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -111,6 +114,10 @@
   display: flex;
   align-items: center;
   justify-content: center; }
+  .nuevos-destinos h3 {
+    font-size: 30px;
+    font-weight: bolder;
+    color: white; }
 
 .opinion-clientes {
   background-color: #df928e; }
@@ -128,19 +135,23 @@
     .opinion-clientes .card .texto .comillas {
       height: 70px;
       width: 70px;
-      color: #df928e;
       font-size: 70px;
+      font-weight: normal;
+      color: #df928e;
       display: flex;
-      align-items: center; }
+      align-items: center;
+      justify-content: center; }
     .opinion-clientes .card .pie {
       display: flex;
       justify-content: space-between; }
       .opinion-clientes .card .pie .text .nombre {
+        font-size: 20px;
         font-weight: bolder;
-        font-size: 20px; }
+        color: black; }
       .opinion-clientes .card .pie .text .estrellas {
-        color: #df928e;
-        font-size: 20px; }
+        font-size: 20px;
+        font-weight: normal;
+        color: #df928e; }
         .opinion-clientes .card .pie .text .estrellas span {
           color: black;
           padding-left: 10px; }
@@ -173,20 +184,21 @@
     color: #df928e; }
 
 .footer {
-  background-color: #ffd6ff; }
-  .footer .links h4 {
+  background-color: #ffd6ff;
+  border-top: 2px solid white; }
+  .footer .links h3 {
     font-weight: bolder;
     color: #df928e; }
   .footer .links a {
     text-decoration: none;
     color: black;
     margin-bottom: 10px; }
-  .footer .contactos h4 {
+  .footer .contactos h3 {
     font-weight: bolder;
     color: #df928e; }
-  .footer .contactos img {
-    height: 30px;
-    width: 30px; }
+  .footer .contactos i {
+    font-size: 20px;
+    color: #df928e; }
   .footer .redes .red {
     font-size: 20px;
     color: white;
@@ -200,7 +212,7 @@
     transition: 0.5s; }
     .footer .redes .red:hover {
       transform: translateY(-10px); }
-  .footer .suscripcion h4 {
+  .footer .suscripcion h3 {
     font-weight: bolder;
     color: #df928e; }
   .footer .suscripcion input {
@@ -245,12 +257,13 @@
 .hero-destinos .text {
   -webkit-animation: slide-in-elliptic-right-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-elliptic-right-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
-  .hero-destinos .text h4 {
-    color: #df928e;
+  .hero-destinos .text h2 {
+    font-size: 50xp;
     font-weight: bolder;
-    font-size: 50px; }
+    color: #df928e; }
   .hero-destinos .text .redes .red {
     font-size: 20px;
+    font-weight: normal;
     color: #df928e; }
 
 .hero-destinos .imagen {
@@ -273,7 +286,7 @@
 .card-destinos {
   height: 250px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  transition: .5s;
+  transition: 0.5s;
   overflow: hidden;
   border-radius: 10px; }
   .card-destinos:hover {
@@ -282,17 +295,18 @@
     background-color: #ffd6ff; }
   .card-destinos:hover img {
     transform: scale(1.1);
-    transition: .5s; }
+    transition: 0.5s; }
   .card-destinos .card-body {
     padding: 10px; }
     .card-destinos .card-body .card-title {
       margin-bottom: 5px;
+      font-size: 25px;
       font-weight: bolder;
-      color: #df928e;
-      font-size: 25px; }
+      color: #df928e; }
     .card-destinos .card-body .valoracion i {
-      color: #df928e;
-      font-size: 20px; }
+      font-size: 20px;
+      font-weight: normal;
+      color: #df928e; }
 
 @-webkit-keyframes slide-in-elliptic-right-fwd {
   0% {
@@ -416,12 +430,11 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   border: 3px solid white;
   background: #df928e;
-  border-radius: 100vw;
-  border: linear-gradient(0deg, #e2a19d 0%, #e9b887 67%); }
+  border-radius: 100vw; }
 
 .wrap-ofertas {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/images/hero-ofertas.webp");
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/OFERTAS/main.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -433,9 +446,10 @@ body::-webkit-scrollbar-thumb {
       letter-spacing: 3px; }
     .wrap-ofertas .hero-ofertas p {
       font-size: 22px; }
-    .wrap-ofertas .hero-ofertas h4 {
+    .wrap-ofertas .hero-ofertas h2 {
+      font-size: 50px;
       font-weight: bolder;
-      font-size: 50px; }
+      color: white; }
     .wrap-ofertas .hero-ofertas .oferta {
       border-radius: 5px;
       border: 2px solid #df928e;
@@ -452,9 +466,9 @@ body::-webkit-scrollbar-thumb {
 .bg {
   background-color: #ffd6ff; }
   .bg .mejores-ofertas .titulo {
-    color: #df928e;
     font-size: 40px;
-    font-weight: bolder; }
+    font-weight: bolder;
+    color: #df928e; }
   .bg .mejores-ofertas .card {
     transition: .8s; }
     .bg .mejores-ofertas .card:hover {
@@ -462,50 +476,50 @@ body::-webkit-scrollbar-thumb {
       transform: translateY(-10px);
       box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px; }
     .bg .mejores-ofertas .card .titulo {
-      color: white;
-      font-weight: bolder;
       font-size: 35px;
+      font-weight: bolder;
+      color: white;
       transition: .5s; }
       .bg .mejores-ofertas .card .titulo:hover {
         color: #df928e; }
     .bg .mejores-ofertas .card .precio {
+      font-size: 25px;
       font-weight: bolder;
-      font-size: 25px; }
+      color: white; }
   .bg .mejores-ofertas .internet, .bg .mejores-ofertas .suite, .bg .mejores-ofertas .exterior {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/OFERTAS/internet.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/images/internet.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
   .bg .mejores-ofertas .suite {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/OFERTAS/camarote-suite.jpg"); }
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/images/camarote-suite.webp"); }
   .bg .mejores-ofertas .exterior {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/OFERTAS/camarote-exterior.jpg"); }
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/images/camarote-exterior.webp"); }
 
 .crucero-corto {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  justify-content: center; }
   .crucero-corto .titulo-crucero-corto {
-    color: #df928e;
     font-size: 40px;
-    font-weight: bolder; }
+    font-weight: bolder;
+    color: #df928e; }
   .crucero-corto button {
     width: 300px; }
 
 .hero-cruceros {
-  background: #ffd6ff;
-  background: linear-gradient(90deg, #ffd6ff 0%, #d0a7a5 22%, #df928e 57%, #b06c69 92%); }
-  .hero-cruceros h2 {
-    font-size: 35px;
-    font-weight: bolder;
-    color: white;
-    text-align: center; }
-  .hero-cruceros img {
-    height: 400px; }
-  .hero-cruceros .body img {
-    height: 50px; }
-  .hero-cruceros .body p {
-    font-size: 20px;
-    color: white; }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/images/hero-cruceros.webp");
+  height: 100vh;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+  .hero-cruceros .hero h2 {
+    font-size: 60px; }
+
+.crucero .nombre-crucero {
+  border-bottom: 10px solid #df928e;
+  font-size: 50px; }
 
 .proximamente {
   background-color: #ffd6ff; }
@@ -515,56 +529,75 @@ body::-webkit-scrollbar-thumb {
     justify-content: center; }
     .proximamente .titulo-proximamente .titulo {
       font-size: 50px;
-      color: #df928e;
-      font-weight: bolder; }
+      font-weight: bolder;
+      color: #df928e; }
 
 .titulo {
   font-size: 40px;
-  color: #df928e;
-  font-weight: bolder; }
+  font-weight: bolder;
+  color: #df928e; }
 
 .card {
-  transition: .5s; }
+  transition: 0.5s; }
   .card:hover {
     cursor: pointer;
     transform: translateY(-10px); }
   .card .card-body .card-title {
     font-size: 30px;
-    color: #df928e;
     font-weight: bolder;
+    color: #df928e;
     text-align: center; }
   .card .card-body i {
-    color: #df928e;
-    font-size: 20px; }
-
-.mainImg-contactos {
-  background-color: #ffd6ff;
-  height: 110vh;
-  position: relative; }
-
-.padre {
-  background-color: white; }
-  .padre .contactanos h4 {
-    color: #df928e;
-    border-bottom: 1px solid #df928e; }
-  .padre .contactanos form label {
+    font-size: 20px;
+    font-weight: normal;
     color: #df928e; }
-  .padre .buscanos {
+
+.bg {
+  background-color: #ffd6ff;
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+  .bg .contactanos {
+    background-color: white; }
+    .bg .contactanos h3 {
+      color: #df928e;
+      border-bottom: 1px solid #df928e; }
+    .bg .contactanos form label {
+      color: #df928e; }
+    .bg .contactanos form input,
+    .bg .contactanos form textarea {
+      border: 1px solid #df928e;
+      outline: none; }
+  .bg .buscanos {
     background-color: #df928e; }
-    .padre .buscanos h4 {
+    .bg .buscanos h4 {
       color: white; }
-    .padre .buscanos i, .padre .buscanos .redes {
+    .bg .buscanos i,
+    .bg .buscanos .redes {
       font-size: 20px; }
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 .logo {
   display: flex;
   align-items: center;
+  justify-content: center;
   column-gap: 10px; }
   .logo img {
     height: 50px;
     width: 50px; }
   .logo h1 {
     font-size: 30px;
-    font-weight: bolder; }
+    font-weight: bolder;
+    color: black; }
     .logo h1 span {
       color: #df928e; }

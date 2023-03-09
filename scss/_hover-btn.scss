@@ -1,14 +1,14 @@
 .main-btn {
-    color: $darkPink;
+    color: map-get($colors , darkPink );
     font-weight: bolder;
-    border: 2px solid $darkPink;
+    border: 2px solid map-get($colors , darkPink );
     padding: 10px 20px;
     border-radius: 25px;
     background-color: transparent;
     transition: .5s;
 
     &:hover {
-        background-color: $darkPink;
+        background-color: map-get($colors , darkPink );
         color: white;
     }
 }
@@ -16,14 +16,14 @@
 .secondary-btn {
     color: white;
     font-weight: bolder;
-    border: 2px solid $darkPink;
+    border: 2px solid map-get($colors , darkPink );
     padding: 10px 20px;
     border-radius: 25px;
-    background-color: $darkPink;
+    background-color: map-get($colors , darkPink );
     transition: .5s;
 
     &:hover {
         background-color: transparent;
-        color: $darkPink;
+        color: map-get($colors , darkPink );
     }
 }
