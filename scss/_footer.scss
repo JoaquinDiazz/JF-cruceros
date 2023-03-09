@@ -4,8 +4,7 @@
 
   .links {
     h3 {
-      font-weight: bolder;
-      color: map-get($colors , darkPink );
+      @include tittle(30px, bolder, map-get($colors , darkPink ))
     }
     a {
       text-decoration: none;
@@ -16,8 +15,7 @@
 
   .contactos {
     h3 {
-      font-weight: bolder;
-      color: map-get($colors , darkPink );
+      @include tittle(30px, bolder, map-get($colors , darkPink ))
     }
 
     i {
@@ -49,8 +47,7 @@
   .suscripcion {
 
     h3 {
-      font-weight: bolder;
-      color: map-get($colors , darkPink );
+      @include tittle(30px, bolder, map-get($colors , darkPink ))
     }
     input {
       padding: 10px;

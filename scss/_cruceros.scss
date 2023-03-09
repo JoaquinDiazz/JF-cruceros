@@ -3,10 +3,8 @@
     url("../assets/images/hero-cruceros.webp");
   @include bgImg(100vh, center bottom, no-repeat, fixed, cover);
 
-  .hero {
-    h2 {
-      font-size: 60px;
-    }
+  .titulo-hero-cruceros {
+    @include tittle(50px, bolder, map-get($colors, darkPink))
   }
 }
 

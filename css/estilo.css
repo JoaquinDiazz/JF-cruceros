@@ -11,16 +11,14 @@
   .navbar .navbar-brand, .navbar .navbar-collapse .buttons {
     -webkit-animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-    animation-delay: 0.4s;
-    display: flex;
-    align-items: center;
-    column-gap: 10px; }
+    animation-delay: 0.4s; }
     .navbar .navbar-brand img, .navbar .navbar-collapse .buttons img {
       height: 50px;
       width: 50px; }
     .navbar .navbar-brand h1, .navbar .navbar-collapse .buttons h1 {
       font-size: 25px;
-      font-weight: bolder; }
+      font-weight: bolder;
+      color: black; }
       .navbar .navbar-brand h1 .main-color, .navbar .navbar-collapse .buttons h1 .main-color {
         color: #df928e; }
   .navbar .navbar-toggler {
@@ -58,6 +56,21 @@
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1; } }
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px; }
+  .logo img {
+    height: 50px;
+    width: 50px; }
+  .logo h1 {
+    font-size: 30px;
+    font-weight: bolder;
+    color: black; }
+    .logo h1 span {
+      color: #df928e; }
 
 .mainImg-home {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/images/hero-home.webp);
@@ -159,101 +172,6 @@
         height: 90px;
         width: 90px; }
 
-.main-btn {
-  color: #df928e;
-  font-weight: bolder;
-  border: 2px solid #df928e;
-  padding: 10px 20px;
-  border-radius: 25px;
-  background-color: transparent;
-  transition: .5s; }
-  .main-btn:hover {
-    background-color: #df928e;
-    color: white; }
-
-.secondary-btn {
-  color: white;
-  font-weight: bolder;
-  border: 2px solid #df928e;
-  padding: 10px 20px;
-  border-radius: 25px;
-  background-color: #df928e;
-  transition: .5s; }
-  .secondary-btn:hover {
-    background-color: transparent;
-    color: #df928e; }
-
-.footer {
-  background-color: #ffd6ff;
-  border-top: 2px solid white; }
-  .footer .links h3 {
-    font-weight: bolder;
-    color: #df928e; }
-  .footer .links a {
-    text-decoration: none;
-    color: black;
-    margin-bottom: 10px; }
-  .footer .contactos h3 {
-    font-weight: bolder;
-    color: #df928e; }
-  .footer .contactos i {
-    font-size: 20px;
-    color: #df928e; }
-  .footer .redes .red {
-    font-size: 20px;
-    color: white;
-    margin-bottom: 5px;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    display: grid;
-    place-content: center;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    transition: 0.5s; }
-    .footer .redes .red:hover {
-      transform: translateY(-10px); }
-  .footer .suscripcion h3 {
-    font-weight: bolder;
-    color: #df928e; }
-  .footer .suscripcion input {
-    padding: 10px;
-    border: 2px solid #df928e;
-    border-radius: 25px;
-    outline: none;
-    background-color: transparent; }
-  .footer .suscripcion button {
-    width: 100px; }
-  .footer .copyright {
-    border-top: 2px solid #df928e;
-    padding-top: 20px;
-    text-align: center; }
-
-.red-facebook {
-  background-color: #3b5998; }
-
-.red-twitter {
-  background-color: #1da1f2; }
-
-.red-instagram {
-  background-color: #c32aa3; }
-
-.red-whatsapp {
-  background-color: #25d366; }
-
-.item {
-  position: relative; }
-  .item::after {
-    content: "";
-    background-color: #df928e;
-    height: 3px;
-    width: 0;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    transition: 0.5s; }
-  .item:hover::after {
-    width: 100%; }
-
 .hero-destinos .text {
   -webkit-animation: slide-in-elliptic-right-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-elliptic-right-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
@@ -283,6 +201,11 @@
   .hero-destinos .decoracion img {
     width: 100%; }
 
+.titulo-card-destinos {
+  font-size: 35px;
+  font-weight: bolder;
+  color: #df928e; }
+
 .card-destinos {
   height: 250px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -291,11 +214,7 @@
   border-radius: 10px; }
   .card-destinos:hover {
     cursor: pointer;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    background-color: #ffd6ff; }
-  .card-destinos:hover img {
-    transform: scale(1.1);
-    transition: 0.5s; }
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; }
   .card-destinos .card-body {
     padding: 10px; }
     .card-destinos .card-body .card-title {
@@ -424,14 +343,6 @@
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out; } }
 
-body::-webkit-scrollbar {
-  width: 1em; }
-
-body::-webkit-scrollbar-thumb {
-  border: 3px solid white;
-  background: #df928e;
-  border-radius: 100vw; }
-
 .wrap-ofertas {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/images/hero-ofertas.webp");
   height: 100vh;
@@ -514,8 +425,10 @@ body::-webkit-scrollbar-thumb {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover; }
-  .hero-cruceros .hero h2 {
-    font-size: 60px; }
+  .hero-cruceros .titulo-hero-cruceros {
+    font-size: 50px;
+    font-weight: bolder;
+    color: #df928e; }
 
 .crucero .nombre-crucero {
   border-bottom: 10px solid #df928e;
@@ -587,17 +500,108 @@ body::-webkit-scrollbar-thumb {
   100% {
     opacity: 1; } }
 
-.logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  column-gap: 10px; }
-  .logo img {
-    height: 50px;
-    width: 50px; }
-  .logo h1 {
+body::-webkit-scrollbar {
+  width: 1em; }
+
+body::-webkit-scrollbar-thumb {
+  border: 3px solid white;
+  background: #df928e;
+  border-radius: 100vw; }
+
+.item {
+  position: relative; }
+  .item::after {
+    content: "";
+    background-color: #df928e;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s; }
+  .item:hover::after {
+    width: 100%; }
+
+.main-btn {
+  color: #df928e;
+  font-weight: bolder;
+  border: 2px solid #df928e;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: transparent;
+  transition: .5s; }
+  .main-btn:hover {
+    background-color: #df928e;
+    color: white; }
+
+.secondary-btn {
+  color: white;
+  font-weight: bolder;
+  border: 2px solid #df928e;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #df928e;
+  transition: .5s; }
+  .secondary-btn:hover {
+    background-color: transparent;
+    color: #df928e; }
+
+.footer {
+  background-color: #ffd6ff;
+  border-top: 2px solid white; }
+  .footer .links h3 {
     font-size: 30px;
     font-weight: bolder;
-    color: black; }
-    .logo h1 span {
-      color: #df928e; }
+    color: #df928e; }
+  .footer .links a {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px; }
+  .footer .contactos h3 {
+    font-size: 30px;
+    font-weight: bolder;
+    color: #df928e; }
+  .footer .contactos i {
+    font-size: 20px;
+    color: #df928e; }
+  .footer .redes .red {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: 0.5s; }
+    .footer .redes .red:hover {
+      transform: translateY(-10px); }
+  .footer .suscripcion h3 {
+    font-size: 30px;
+    font-weight: bolder;
+    color: #df928e; }
+  .footer .suscripcion input {
+    padding: 10px;
+    border: 2px solid #df928e;
+    border-radius: 25px;
+    outline: none;
+    background-color: transparent; }
+  .footer .suscripcion button {
+    width: 100px; }
+  .footer .copyright {
+    border-top: 2px solid #df928e;
+    padding-top: 20px;
+    text-align: center; }
+
+.red-facebook {
+  background-color: #3b5998; }
+
+.red-twitter {
+  background-color: #1da1f2; }
+
+.red-instagram {
+  background-color: #c32aa3; }
+
+.red-whatsapp {
+  background-color: #25d366; }
