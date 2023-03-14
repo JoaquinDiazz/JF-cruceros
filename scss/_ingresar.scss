@@ -1,0 +1,18 @@
+// ------------LOGIN-------------
+.bg-login {
+    // background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../assets/images/bg-login.jpg");
+    // background-color: map-get($colors , darkPink );
+    height: 100vh auto;
+    background-color: map-get($colors,darkPink );
+    // @include bgImg(auto, center, no-repeat,fixed, cover );
+}
+
+// ----------------SIGNUP----------------
+.bg-signup {
+    background: map-get($colors, darkPink);
+    height: auto;
+}
+.img-signup {
+    background-image: url(../assets/images/signup.jpg);
+    @include bgImgCard();
+}

@@ -500,6 +500,20 @@
   100% {
     opacity: 1; } }
 
+.bg-login {
+  height: 100vh auto;
+  background-color: #df928e; }
+
+.bg-signup {
+  background: #df928e;
+  height: auto; }
+
+.img-signup {
+  background-image: url(../assets/images/signup.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 body::-webkit-scrollbar {
   width: 1em; }
 
