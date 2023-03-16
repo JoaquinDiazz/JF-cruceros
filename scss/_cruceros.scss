@@ -3,8 +3,15 @@
     url("../assets/images/hero-cruceros.webp");
   @include bgImg(100vh, center bottom, no-repeat, fixed, cover);
 
-  .titulo-hero-cruceros {
-    @include tittle(50px, bolder, map-get($colors, darkPink))
+  .body {
+    -webkit-animation: slide-in-elliptic-right-fwd 0.7s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-in-elliptic-right-fwd 0.7s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+    .titulo-hero-cruceros {
+      @include tittle(50px, bolder, map-get($colors, darkPink))
+    }
   }
 }
 

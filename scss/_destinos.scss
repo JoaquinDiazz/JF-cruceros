@@ -23,18 +23,6 @@
       @include tamaño(550px, 550px)
     }
   }
-
-  .decoracion {
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    right: 0;
-    @include tamaño(600px, 600px);
-
-    img {
-      width: 100%;
-    }
-  }
 }
 
 // ----------------CARTAS DESTINOS-------------
