@@ -34,11 +34,10 @@
   }
 
   .card-nosotros {
-    height: 250px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: 0.5s;
     background-color: map-get($colors , darkPink );
-    border: none;
+
 
     &:hover {
       cursor: pointer;
@@ -47,15 +46,6 @@
       transform: translateY(-10px);
     }
 
-    .card-title-nosotros {
-      @include tittle(25px, bolder, black);
-      margin-top: 10px;
-      text-align: center;
-    }
-
-    .card-nosotros-img {
-      @include tamaño(70px, 70px)
-    }
   }
 }
 
@@ -76,6 +66,17 @@
 
 .opinion-clientes {
   background-color: #df928e;
+
+  .bi-quote {
+    @include tamaño(50px, 50px);
+        @include tittle(70px, normal, map-get($colors , darkPink ));
+  }
+
+  .bi-star-fill,
+  .bi-star,
+  .bi-star-half {
+    color: map-get($colors , darkPink );
+  }
 
   .card {
     @include tamaño(300px, 400px);

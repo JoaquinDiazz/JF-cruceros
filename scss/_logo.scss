@@ -13,3 +13,14 @@
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  .logo {
+    img {
+      @include tamaño(40px, 40px)
+    }
+    h1 {
+      @include tittle(25px, bolder, black);
+    }
+  }
+}

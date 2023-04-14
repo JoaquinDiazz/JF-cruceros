@@ -72,6 +72,15 @@
     .logo h1 span {
       color: #df928e; }
 
+@media screen and (max-width: 480px) {
+  .logo img {
+    height: 40px;
+    width: 40px; }
+  .logo h1 {
+    font-size: 25px;
+    font-weight: bolder;
+    color: black; } }
+
 .mainImg-home {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/images/hero-home.webp);
   height: 100vh;
@@ -104,24 +113,13 @@
     .nosotros .titulo-nosotros h3 span {
       color: #df928e; }
   .nosotros .card-nosotros {
-    height: 250px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: 0.5s;
-    background-color: #df928e;
-    border: none; }
+    background-color: #df928e; }
     .nosotros .card-nosotros:hover {
       cursor: pointer;
       box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
       transform: translateY(-10px); }
-    .nosotros .card-nosotros .card-title-nosotros {
-      font-size: 25px;
-      font-weight: bolder;
-      color: black;
-      margin-top: 10px;
-      text-align: center; }
-    .nosotros .card-nosotros .card-nosotros-img {
-      height: 70px;
-      width: 70px; }
 
 .nuevos-destinos {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/images/nuevosDestinos.webp);
@@ -140,6 +138,16 @@
 
 .opinion-clientes {
   background-color: #df928e; }
+  .opinion-clientes .bi-quote {
+    height: 50px;
+    width: 50px;
+    font-size: 70px;
+    font-weight: normal;
+    color: #df928e; }
+  .opinion-clientes .bi-star-fill,
+  .opinion-clientes .bi-star,
+  .opinion-clientes .bi-star-half {
+    color: #df928e; }
   .opinion-clientes .card {
     height: 300px;
     width: 400px;
@@ -787,3 +795,7 @@ body::-webkit-scrollbar-thumb {
 
 .red-whatsapp {
   background-color: #25d366; }
+
+@media screen and (max-width: 480px) {
+  .hero-home .titulo-main {
+    font-size: 35px !important; } }
