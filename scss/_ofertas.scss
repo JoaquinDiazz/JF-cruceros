@@ -20,8 +20,8 @@
             border-radius: 5px;
             border: 2px solid map-get($colors , darkPink );
             background-color: map-get($colors , darkPink );
+            display: inline-block;
             padding: 10px 20px;
-            width: 400px
         }
         .secondary-btn {
             font-size: 18px;
@@ -36,7 +36,6 @@
 }
 
 .bg {
-    background-color: map-get($colors , lightPinkk );
 
     .mejores-ofertas {
 
@@ -82,9 +81,5 @@
 
     .titulo-crucero-corto {
         @include tittle(40px, bolder,  map-get($colors , darkPink ));
-    }
-
-    button {
-        width: 300px;
     }
 }

@@ -69,7 +69,7 @@
 
   .bi-quote {
     @include tamaño(50px, 50px);
-        @include tittle(70px, normal, map-get($colors , darkPink ));
+    @include tittle(70px, normal, map-get($colors , darkPink ));
   }
 
   .bi-star-fill,
@@ -78,51 +78,6 @@
     color: map-get($colors , darkPink );
   }
 
-  .card {
-    @include tamaño(300px, 400px);
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-    transition: 0.5s;
-
-    &:hover {
-      cursor: pointer;
-      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-      transform: translateY(10px);
-    }
-
-    .texto {
-      .comillas {
-        @include tamaño(70px, 70px);
-        @include tittle(70px, normal, map-get($colors , darkPink ));
-        @include flex-center-center();
-      }
-    }
-
-    .pie {
-      display: flex;
-      justify-content: space-between;
-
-      .text {
-        .nombre {
-          @include tittle(20px, bolder, black)
-        }
-
-        .estrellas {
-          @include tittle(20px, normal,  map-get($colors , darkPink ));
-
-          span {
-            color: black;
-            padding-left: 10px;
-          }
-        }
-      }
-
-      img {
-        @include tamaño(90px, 90px)
-      }
-    }
-  }
 }
 // ANIMISTA
 @-webkit-keyframes tracking-in-expand-fwd {

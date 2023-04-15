@@ -148,43 +148,6 @@
   .opinion-clientes .bi-star,
   .opinion-clientes .bi-star-half {
     color: #df928e; }
-  .opinion-clientes .card {
-    height: 300px;
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-    transition: 0.5s; }
-    .opinion-clientes .card:hover {
-      cursor: pointer;
-      box-shadow: #26394d 0px 20px 30px -10px;
-      transform: translateY(10px); }
-    .opinion-clientes .card .texto .comillas {
-      height: 70px;
-      width: 70px;
-      font-size: 70px;
-      font-weight: normal;
-      color: #df928e;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-    .opinion-clientes .card .pie {
-      display: flex;
-      justify-content: space-between; }
-      .opinion-clientes .card .pie .text .nombre {
-        font-size: 20px;
-        font-weight: bolder;
-        color: black; }
-      .opinion-clientes .card .pie .text .estrellas {
-        font-size: 20px;
-        font-weight: normal;
-        color: #df928e; }
-        .opinion-clientes .card .pie .text .estrellas span {
-          color: black;
-          padding-left: 10px; }
-      .opinion-clientes .card .pie img {
-        height: 90px;
-        width: 90px; }
 
 @-webkit-keyframes tracking-in-expand-fwd {
   0% {
@@ -395,8 +358,8 @@
       border-radius: 5px;
       border: 2px solid #df928e;
       background-color: #df928e;
-      padding: 10px 20px;
-      width: 400px; }
+      display: inline-block;
+      padding: 10px 20px; }
     .wrap-ofertas .hero-ofertas .secondary-btn {
       font-size: 18px;
       letter-spacing: 1px;
@@ -404,38 +367,40 @@
       .wrap-ofertas .hero-ofertas .secondary-btn:hover {
         color: white; }
 
-.bg {
-  background-color: #ffd6ff; }
-  .bg .mejores-ofertas .titulo {
-    font-size: 40px;
+.bg .mejores-ofertas .titulo {
+  font-size: 40px;
+  font-weight: bolder;
+  color: #df928e; }
+
+.bg .mejores-ofertas .card {
+  transition: .8s; }
+  .bg .mejores-ofertas .card:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px; }
+  .bg .mejores-ofertas .card .titulo {
+    font-size: 35px;
     font-weight: bolder;
-    color: #df928e; }
-  .bg .mejores-ofertas .card {
-    transition: .8s; }
-    .bg .mejores-ofertas .card:hover {
-      cursor: pointer;
-      transform: translateY(-10px);
-      box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px; }
-    .bg .mejores-ofertas .card .titulo {
-      font-size: 35px;
-      font-weight: bolder;
-      color: white;
-      transition: .5s; }
-      .bg .mejores-ofertas .card .titulo:hover {
-        color: #df928e; }
-    .bg .mejores-ofertas .card .precio {
-      font-size: 25px;
-      font-weight: bolder;
-      color: white; }
-  .bg .mejores-ofertas .internet, .bg .mejores-ofertas .suite, .bg .mejores-ofertas .exterior {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/images/internet.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; }
-  .bg .mejores-ofertas .suite {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/images/camarote-suite.webp"); }
-  .bg .mejores-ofertas .exterior {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/images/camarote-exterior.webp"); }
+    color: white;
+    transition: .5s; }
+    .bg .mejores-ofertas .card .titulo:hover {
+      color: #df928e; }
+  .bg .mejores-ofertas .card .precio {
+    font-size: 25px;
+    font-weight: bolder;
+    color: white; }
+
+.bg .mejores-ofertas .internet, .bg .mejores-ofertas .suite, .bg .mejores-ofertas .exterior {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/images/internet.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.bg .mejores-ofertas .suite {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/images/camarote-suite.webp"); }
+
+.bg .mejores-ofertas .exterior {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/images/camarote-exterior.webp"); }
 
 .crucero-corto {
   display: flex;
@@ -445,8 +410,6 @@
     font-size: 40px;
     font-weight: bolder;
     color: #df928e; }
-  .crucero-corto button {
-    width: 300px; }
 
 .hero-cruceros {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/images/hero-cruceros.webp");
@@ -499,10 +462,10 @@
     color: #df928e; }
 
 .bg-contactos {
-  background-color: #ffd6ff;
   -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
   .bg-contactos .contactanos {
+    border: 1px solid #df928e;
     background-color: white; }
     .bg-contactos .contactanos h3 {
       color: #df928e;
@@ -513,6 +476,9 @@
     .bg-contactos .contactanos form textarea {
       border: 1px solid #df928e;
       outline: none; }
+      .bg-contactos .contactanos form input:focus,
+      .bg-contactos .contactanos form textarea:focus {
+        box-shadow: none; }
   .bg-contactos .buscanos {
     background-color: #df928e; }
     .bg-contactos .buscanos h4 {
@@ -544,6 +510,10 @@
     background-size: cover; }
   .pag-reservas .form-reserva {
     background-color: #ffd6ff; }
+    .pag-reservas .form-reserva .titulo-reservas {
+      font-size: 40px;
+      font-weight: bolder;
+      color: #df928e; }
     .pag-reservas .form-reserva label {
       font-weight: bolder;
       color: black; }
@@ -737,7 +707,6 @@ body::-webkit-scrollbar-thumb {
     color: #df928e; }
 
 .footer {
-  background-color: #ffd6ff;
   border-top: 2px solid white; }
   .footer .links h3 {
     font-size: 30px;
@@ -796,6 +765,56 @@ body::-webkit-scrollbar-thumb {
 .red-whatsapp {
   background-color: #25d366; }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .hero-home .titulo-main {
-    font-size: 35px !important; } }
+    font-size: 60px; }
+  .wrap-ofertas .hero-ofertas .parrafo1 {
+    font-size: 15px; }
+  .wrap-ofertas .hero-ofertas h2 {
+    font-size: 45px; } }
+
+@media screen and (max-width: 480px) {
+  .navbar .container .logo h1 {
+    font-size: 20px; }
+  .navbar .logo img {
+    height: 50px;
+    width: 50px; }
+  .footer .logo h1 {
+    font-size: 30px; }
+  .footer .logo img {
+    height: 50px;
+    width: 50px; }
+  .hero-home .titulo-main {
+    font-size: 40px !important; }
+  .hero-destinos .imagen img {
+    width: 400px;
+    height: 300px; }
+  .hero-cruceros .body .titulo-hero-cruceros {
+    font-size: 40px; }
+  .hero-cruceros .body .redes-cruceros {
+    display: none; }
+  .wrap-ofertas .hero-ofertas .parrafo1 {
+    font-size: 12px; }
+  .wrap-ofertas .hero-ofertas h2 {
+    font-size: 35px; }
+  .wrap-ofertas .hero-ofertas .oferta {
+    font-size: 15px; }
+  .wrap-ofertas .hero-ofertas .secondary-btn {
+    font-size: 15px; }
+  .bg .mejores-ofertas .titulo {
+    font-size: 25px; }
+  .crucero-corto .titulo-crucero-corto {
+    font-size: 30px;
+    text-align: center; }
+  .pag-reservas .form-reserva .titulo-reservas {
+    font-size: 25px;
+    font-weight: bolder;
+    color: #df928e; }
+  .footer .links h3,
+  .footer .contactos h3,
+  .footer .suscripcion h3 {
+    font-size: 25px; } }
+
+@media screen and (max-width: 300px) {
+  .navbar .logo .imgLogo {
+    display: none; } }

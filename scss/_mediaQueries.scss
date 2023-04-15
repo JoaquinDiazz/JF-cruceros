@@ -1,7 +1,118 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
+    // ---------------------HERO HOME-----------------------
     .hero-home {
         .titulo-main {
-            font-size: 35px !important;
+            font-size: 60px;
         }
+    }
+    // --------------------------OFERTAS PAGE------------------------
+    // --------------------------HERO------------------------
+    .wrap-ofertas {
+        .hero-ofertas {
+            .parrafo1 {
+                font-size: 15px;
+            }
+            h2 {
+                font-size: 45px;
+             }           
+        } 
+    }
+}
+@media screen and (max-width: 480px) {
+    // ------------------------LOGO HEADER---------------------
+    .navbar .container .logo h1{
+        font-size: 20px;
+    }
+    .navbar .logo img {
+        @include tamaño(50px, 50px)
+    }
+    // ------------------------LOGO FOOTER---------------------
+    .footer .logo h1{
+        font-size: 30px;
+    }
+    .footer .logo img{
+        @include tamaño(50px, 50px)
+    }
+    // ---------------------HERO HOME-----------------------
+    .hero-home {
+        .titulo-main {
+            font-size: 40px !important;
+        }
+    }
+    // ---------------------HERO DESTINOS-----------------------
+    .hero-destinos {
+        .imagen {
+            img {
+                width: 400px;
+                height: 300px;
+              }
+        }
+    }
+    // ---------------------HERO CRUCEROS-----------------------
+    .hero-cruceros {
+        .body {
+            .titulo-hero-cruceros {
+                font-size: 40px;
+              }
+
+            .redes-cruceros {
+                display: none;
+            }
+        }
+    }
+    // --------------------------OFERTAS PAGE------------------------
+    // --------------------------HERO------------------------
+    .wrap-ofertas {
+        .hero-ofertas {
+            .parrafo1 {
+                font-size: 12px;
+            }
+            h2 {
+                font-size: 35px;
+             }
+            .oferta {
+                 font-size: 15px;
+            }
+            .secondary-btn {
+                font-size: 15px;
+            } 
+        }
+    }
+    // <!----------------------- MEJORES OFERTAS ---------------->
+    .bg {
+        .mejores-ofertas {
+            .titulo {
+                font-size: 25px;
+            }
+        }
+    }
+    // <!----------------------- CRUCERO CORTO ---------------->
+    .crucero-corto {
+        .titulo-crucero-corto {
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+    //-------------------- RESERVAS PAGES---------------------------
+    .pag-reservas {
+        .form-reserva {
+            .titulo-reservas {
+                @include tittle(25px, bolder, map-get($colors, darkPink));
+            }
+        }
+    }
+    // ----------------------FOOTER---------------------
+    .footer {
+        .links h3,
+        .contactos h3,
+        .suscripcion h3 {
+            font-size: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .navbar .logo .imgLogo {
+        display: none;
     }
 }

@@ -11,6 +11,10 @@
     .form-reserva {
         background-color: map-get($colors, lightPinkk);
 
+        .titulo-reservas {
+                @include tittle(40px, bolder, map-get($colors, darkPink));
+            }
+
         label {
             font-weight: bolder;
             color: black;
