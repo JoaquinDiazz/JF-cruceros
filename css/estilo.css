@@ -508,17 +508,17 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
-  .pag-reservas .form-reserva {
-    background-color: #ffd6ff; }
-    .pag-reservas .form-reserva .titulo-reservas {
-      font-size: 40px;
-      font-weight: bolder;
-      color: #df928e; }
-    .pag-reservas .form-reserva label {
-      font-weight: bolder;
-      color: black; }
-    .pag-reservas .form-reserva input {
-      border: 2px solid #ffd6ff; }
+  .pag-reservas .form-reserva .titulo-reservas {
+    font-size: 40px;
+    font-weight: bolder;
+    color: #df928e; }
+  .pag-reservas .form-reserva label {
+    font-weight: bolder;
+    color: black; }
+  .pag-reservas .form-reserva input {
+    border: 2px solid #ffd6ff; }
+    .pag-reservas .form-reserva input:focus {
+      box-shadow: none; }
 
 @-webkit-keyframes scale-in-top {
   0% {

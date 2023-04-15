@@ -9,7 +9,7 @@
     }
 
     .form-reserva {
-        background-color: map-get($colors, lightPinkk);
+        // background-color: map-get($colors, lightPinkk);
 
         .titulo-reservas {
                 @include tittle(40px, bolder, map-get($colors, darkPink));
@@ -21,6 +21,10 @@
         }
         input {
             border: 2px solid map-get($colors, lightPinkk);
+
+            &:focus {
+                box-shadow: none;
+            }
         }
     }
 }
